@@ -1,0 +1,7 @@
+Russel Staples
+Milestone 1 Work:
+
+Meeting - 1/14/20 (3 hours)
+We decided to make something similar to load store processor. We decided we want 16 registers and 16 different instructions, so we decided on a 4-bit opcode and 4-bit register addresses. We decided what 
+we want each register’s purpose to be. We also decided which instructions we want. 
+
