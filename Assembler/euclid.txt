@@ -1,0 +1,54 @@
+relPrime:
+			# n is already in $a0 from where this was called
+			lli $a1, 2	              # store m in a1
+LOOP:		lli $B, 12				  # load 4 into B
+			mv $0, $sp, 1, 0, 0, 0    # move sp into A
+			sub $sp, $a1, 0, 1, 0, 0  # decrease sp by 8 and move $a1 into $B            0001 0001 0110 0100
+			mv $0, $sp, 1, 0, 0, 0	  # move the value in $sp into $A                    0101 0000 0001 1000
+			sw $0, 0				  # stores m on the stack                            1001 0000 0000 0000
+			mv $0, $a0, 0, 1, 0, 0    # moves n to $B                                    0101 0000 0101 0100
+			sw $0, 1				  # stores n on the stack                            1001 0000 0000 0100
+			mv $0, $ra, 0, 1, 0, 0    # move $ra into B                                  0101 0000 0010 0100
+			sw $0, 2                  # store $ra on the stack                           1001 0000 0000 1000
+			jal gcd					  # jump into the gcd function                       1110 0000 (address of gcd)
+			mv $0, $sp, 1, 0, 0, 0    # put sp into $A                                   0101 0000 0001 1000
+			lw $a0, 1				  # load n back into $a0                             0100 0101 0000 0100
+			lw $a1, 0				  # load m back into $a1                             0100 0110 0000 0000
+			lw $ra, 2                 # load ra back                                     0100 0010 0000 1000
+			lli $A, 3                 # put 3 into A                                     1011 1000 0000 1000
+			add $sp, $0, 0, 0, 0, 0	  # add 3 back to the stack                          0000 0001 0000 0000
+			mv $0, $v0, 1, 0, 0, 0    # put the result of gcd into $A                    0101 0000 0111 1000
+			lli $B, 1				  # put 1 into $B                                    1011 1001 0000 0001
+			beq $0, INCREMENT		  # if result == 1, loop                             0111 0000 0000 0010
+			mv $0, $a1, 1, 0, 0, 1    # move $a1 into A and clear B                      0101 0000 0110 1001
+			add $v0, $0, 0, 0, 0, 0   # put m into $v0 to return                         0000 0111 0000 0000
+			j DONE					  # if result != 1, then return m                    1010 0000 (address of DONE)
+INCREMENT:			
+			add $a1, $0, 0, 0, 0, 0   # add 1 to m in $a1                                0000 0110 0000 0000
+			j LOOP	                  # jump to loop                                     1010 0000 (address of LOOP)
+			
+gcd:
+			mv $0, $a0, 1, 0, 0, 1    # move $a0 into A and clear B                      0101 0000 0101 1001
+			beq $0, RETURNB           # if a == 0, return b                              0111 0000 0000 1010
+			
+LOOP2:		mv $0, $a1, 0, 1, 1, 0    # move $a1 into B and clear A                      0101 0000 0110 1000
+			beq $0, RETURNA			  # if b == 0, return a                              0111 0000 0000 1010
+			mv $0, $a0, 1, 0, 0, 0    # move $a0 back into A                             0101 0000 0101 1000
+			slt $t0, $0, 0, 0, 0, 0   # check if a < b                                   0110 1010 0000 0000
+			beq $0, ELSE              # if a !< b go to the else                         0111 0000 0000 0010
+			sub $a0, $0, 0, 0, 0, 0   # a = a - b                                        0001 0101 0000 0000
+			j LOOP2											#							 1010 0000 (address of LOOP2)
+ELSE:		
+			mv $0, $a0, 0, 1, 0, 0   # move $a0 into B                                   0101 0000 0101 0100
+			mv $0, $a1, 1, 0, 0, 0   # move $a1 into A                                   0101 0000 0110 1000
+			sub $a1, $0, 0, 0, 0, 0   # b = b - a                                        0001 0110 0000 0000
+			j LOOP2                                              #                        1010 0000 (address of LOOP2)
+
+RETURNB:
+			mv $0, $a1, 1, 0, 0, 1   # move $a1 into A and clear B                       0101 0000 0110 1001
+			j DONE													#					 1010 0000 (address of DONE)
+RETURNA:
+			mv $0, $a0, 1, 0, 0, 1   # move $a0 into A and clear B                       0101 0000 0101 1001
+DONE:
+			mv $0, $ra, 1, 0, 0, 0   # move $ra into A
+			jr $0, $0, 0, 0, 0, 0  	 # jump to the return address in A                   0100 0000 0000 0000
