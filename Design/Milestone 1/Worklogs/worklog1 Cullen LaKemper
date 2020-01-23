@@ -1,11 +1,26 @@
 Cullen LaKemper, WORK LOG
 MILESTONE 1 WORK:
 
-Tuesday, January 14, 2020
-Met with team [4 hours]
-We decided to build a modified load store design. Our modified design will fit better into 16-bits and allows us creativity. We finalized our design and made our documentation.
+    Tuesday, January 14, 2020
+    Met with team [4 hours]
+    We decided to build a modified load store design. Our modified design will fit better into 16-bits and allows us creativity. We finalized our design and made our documentation.
 
-We assigned tasks for milestone 2. My tasks are:
-Russel RTLs
-Will input output signals
-Joe and Cullen miscellaneous
+    We assigned tasks for milestone 2. My tasks are:
+    Russel RTLs
+    Will input output signals
+    Joe and Cullen miscellaneous
+MILESTONE 2 WORK:
+	Tuesday, January 20. 2020
+	Corrected some errors in the design document [20 min]
+	Met with team [2 hours]
+    • Wrote the RTL for all or our instructions
+    • Discussed some aspects of the datapath
+        ◦ Created some designs for some components (like register file)
+	Met with team [30 min]
+    • Corrected some errors in the design document
+    • Finished up some work on Milestone 2 (components for RTL instructions)
+    • Fixed comments in Euclid’s algorithm code
+	Tasks for milestone 3:
+    • Create some hardware components
+        ◦ Not decided who is doing which components
+    • Work on component tests
