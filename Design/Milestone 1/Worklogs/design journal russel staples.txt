@@ -1,15 +1,7 @@
-﻿Russel Staples
-
-
-
-Milestone 1 Work:
-
-
+﻿Milestone 1 Work:
 
 Meeting - 1/14/20 (3 hours)
-
-We decided to make something similar to load store processor. We decided we want 16 registers and 16 different instructions, so we decided on a 4-bit opcode and 4-bit register addresses. We decided what 
-we want each register’s purpose to be. We also decided which instructions we want.
+We decided to make something similar to load store processor. We decided we want 16 registers and 16 different instructions, so we decided on a 4-bit opcode and 4-bit register addresses. We decided what we want each register’s purpose to be. We also decided which instructions we want. 
 
 
 Milestone 2 Work:
@@ -21,5 +13,12 @@ Meeting 1/22/20 (1 hours)
 Will and I worked on the descriptions for the components of the architecture
 
 Milestone 3 tasks: Start wiring hardware components
- 
 
+
+Milestone 3 Work:
+
+Meeting 1/27/20 (1 hour)
+Will and I met and started working on the individual components in Xilinx. He created a Google Doc with all the components and everyone in the group chose some that they would work on in Xilinx.
+
+Meeting 1/28/20 (3 hours)
+We made a rough draft of our datapath on a whiteboard. I listed all the control signals and their descriptions and made a basic plan of how we would test small groups of components. Joe fixed errors in the design document and fixed problems in the procedure call convention code. Cullen said he would make a cleaner version of the RTL diagram digitally. Will updated the list of components, then made a plan of how to implement and test the components individually.
