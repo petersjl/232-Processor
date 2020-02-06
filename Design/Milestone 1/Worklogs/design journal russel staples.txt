@@ -22,3 +22,9 @@ Will and I met and started working on the individual components in Xilinx. He cr
 
 Meeting 1/28/20 (3 hours)
 We made a rough draft of our datapath on a whiteboard. I listed all the control signals and their descriptions and made a basic plan of how we would test small groups of components. Joe fixed errors in the design document and fixed problems in the procedure call convention code. Cullen said he would make a cleaner version of the RTL diagram digitally. Will updated the list of components, then made a plan of how to implement and test the components individually.
+
+
+Milestone 4 Work:
+
+Meeting 2/5/20 (2 hours)
+Our group met and designed a finite state machine for our project. I created a digital version and put it in the design documents. We uploaded our tested and completed components to git as well.
