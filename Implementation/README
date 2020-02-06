@@ -1,0 +1,7 @@
+Here are the components and their corresponding tests.
+
+I also have one file for integration testing (main.sch) and its test (TestRegMem.v)
+That tests an interaction with memory and the registry file, I included the memory init file.
+The control signals are mocked using inputs and setting them in the test file.
+
+I don't know if everything is here that is needed to recreate it because I don't really know how Xilinx treats these files.
