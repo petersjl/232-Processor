@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan3e -verilog alu1b_drc.vf -w C:/Users/petersjl/Downloads/aluIO/remote_sources/_/alu16b/alu1b.sch 
+sch2sym -intstyle ise -family spartan3e -refsym alu1b C:/Users/petersjl/Downloads/aluIO/remote_sources/_/alu16b/alu1b.sch C:/Users/petersjl/Documents/School/CSSE/232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Implementation/Alu/alu1b.sym 

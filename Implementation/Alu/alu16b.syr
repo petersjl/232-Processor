@@ -1,0 +1,488 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Reading design: alu16b.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "alu16b.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "alu16b"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-vq100
+
+---- Source Options
+Top Module Name                    : alu16b
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "add1b.vf" in library work
+Compiling verilog file "alu1b.vf" in library work
+Module <add1b> compiled
+Module <M2_1E_MXILINX_alu1b> compiled
+Module <M8_1E_MXILINX_alu1b> compiled
+Module <M2_1_MXILINX_alu1b> compiled
+Module <add1b_MUSER_alu1b> compiled
+Compiling verilog file "alu16b.vf" in library work
+Module <alu1b> compiled
+Module <NOR16_MXILINX_alu16b> compiled
+Module <M2_1E_MXILINX_alu16b> compiled
+Module <M8_1E_MXILINX_alu16b> compiled
+Module <M2_1_MXILINX_alu16b> compiled
+Module <add1b_MUSER_alu16b> compiled
+Module <alu1b_MUSER_alu16b> compiled
+Module <alu16b> compiled
+No errors in compilation
+Analysis of file <"alu16b.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <alu16b> in library <work>.
+
+Analyzing hierarchy for module <alu1b_MUSER_alu16b> in library <work>.
+
+Analyzing hierarchy for module <NOR16_MXILINX_alu16b> in library <work>.
+
+Analyzing hierarchy for module <add1b_MUSER_alu16b> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_alu16b> in library <work>.
+
+Analyzing hierarchy for module <M8_1E_MXILINX_alu16b> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_alu16b> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_alu16b> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_alu16b> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_alu16b> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <alu16b>.
+Module <alu16b> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_36_12" for instance <XLXI_36> in unit <alu16b>.
+Analyzing module <alu1b_MUSER_alu16b> in library <work>.
+Module <alu1b_MUSER_alu16b> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_15_10" for instance <XLXI_15> in unit <alu1b_MUSER_alu16b>.
+    Set user-defined property "HU_SET =  XLXI_17_11" for instance <XLXI_17> in unit <alu1b_MUSER_alu16b>.
+Analyzing module <add1b_MUSER_alu16b> in library <work>.
+Module <add1b_MUSER_alu16b> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_alu16b> in library <work>.
+Module <M2_1_MXILINX_alu16b> is correct for synthesis.
+ 
+Analyzing module <M8_1E_MXILINX_alu16b> in library <work>.
+Module <M8_1E_MXILINX_alu16b> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_9" for instance <I_M01> in unit <M8_1E_MXILINX_alu16b>.
+    Set user-defined property "HU_SET =  I_M23_8" for instance <I_M23> in unit <M8_1E_MXILINX_alu16b>.
+    Set user-defined property "HU_SET =  I_M45_7" for instance <I_M45> in unit <M8_1E_MXILINX_alu16b>.
+    Set user-defined property "HU_SET =  I_M67_6" for instance <I_M67> in unit <M8_1E_MXILINX_alu16b>.
+Analyzing module <M2_1E_MXILINX_alu16b.1> in library <work>.
+Module <M2_1E_MXILINX_alu16b.1> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_alu16b.2> in library <work>.
+Module <M2_1E_MXILINX_alu16b.2> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_alu16b.3> in library <work>.
+Module <M2_1E_MXILINX_alu16b.3> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_alu16b.4> in library <work>.
+Module <M2_1E_MXILINX_alu16b.4> is correct for synthesis.
+ 
+Analyzing module <NOR16_MXILINX_alu16b> in library <work>.
+Module <NOR16_MXILINX_alu16b> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_2> in unit <NOR16_MXILINX_alu16b>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <NOR16_MXILINX_alu16b>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_129> in unit <NOR16_MXILINX_alu16b>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <NOR16_MXILINX_alu16b>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_142> in unit <NOR16_MXILINX_alu16b>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_147> in unit <NOR16_MXILINX_alu16b>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_165> in unit <NOR16_MXILINX_alu16b>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_170> in unit <NOR16_MXILINX_alu16b>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <NOR16_MXILINX_alu16b>.
+    Related source file is "alu16b.vf".
+Unit <NOR16_MXILINX_alu16b> synthesized.
+
+
+Synthesizing Unit <add1b_MUSER_alu16b>.
+    Related source file is "alu16b.vf".
+Unit <add1b_MUSER_alu16b> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_alu16b>.
+    Related source file is "alu16b.vf".
+Unit <M2_1_MXILINX_alu16b> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_alu16b_1>.
+    Related source file is "alu16b.vf".
+Unit <M2_1E_MXILINX_alu16b_1> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_alu16b_2>.
+    Related source file is "alu16b.vf".
+Unit <M2_1E_MXILINX_alu16b_2> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_alu16b_3>.
+    Related source file is "alu16b.vf".
+Unit <M2_1E_MXILINX_alu16b_3> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_alu16b_4>.
+    Related source file is "alu16b.vf".
+Unit <M2_1E_MXILINX_alu16b_4> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_alu16b>.
+    Related source file is "alu16b.vf".
+Unit <M8_1E_MXILINX_alu16b> synthesized.
+
+
+Synthesizing Unit <alu1b_MUSER_alu16b>.
+    Related source file is "alu16b.vf".
+Unit <alu1b_MUSER_alu16b> synthesized.
+
+
+Synthesizing Unit <alu16b>.
+    Related source file is "alu16b.vf".
+Unit <alu16b> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <alu16b> ...
+
+Optimizing unit <NOR16_MXILINX_alu16b> ...
+
+Optimizing unit <add1b_MUSER_alu16b> ...
+
+Optimizing unit <M2_1_MXILINX_alu16b> ...
+
+Optimizing unit <M2_1E_MXILINX_alu16b_1> ...
+
+Optimizing unit <M2_1E_MXILINX_alu16b_2> ...
+
+Optimizing unit <M2_1E_MXILINX_alu16b_3> ...
+
+Optimizing unit <M2_1E_MXILINX_alu16b_4> ...
+
+Optimizing unit <M8_1E_MXILINX_alu16b> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block alu16b, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : alu16b.ngr
+Top Level Output File Name         : alu16b
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 53
+
+Cell Usage :
+# BELS                             : 537
+#      AND2                        : 80
+#      AND2B1                      : 16
+#      AND3                        : 128
+#      AND3B1                      : 64
+#      GND                         : 2
+#      INV                         : 64
+#      MUXCY                       : 1
+#      MUXCY_L                     : 3
+#      MUXF5_L                     : 32
+#      MUXF6                       : 16
+#      OR2                         : 96
+#      OR3                         : 16
+#      OR4                         : 16
+#      VCC                         : 2
+#      XOR2                        : 1
+# IO Buffers                       : 53
+#      IBUF                        : 35
+#      OBUF                        : 18
+# Logical                          : 4
+#      NOR4                        : 4
+# Others                           : 4
+#      FMAP                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100evq100-5 
+
+ Number of Slices:                       32  out of    960     3%  
+ Number of 4 input LUTs:                 64  out of   1920     3%  
+ Number of IOs:                          53
+ Number of bonded IOBs:                  53  out of     66    80%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 47.141ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 9732012 / 18
+-------------------------------------------------------------------------
+Delay:               47.141ns (Levels of Logic = 51)
+  Source:            B<0> (PAD)
+  Destination:       zero (PAD)
+
+  Data Path: B<0> to zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.380  B_0_IBUF (B_0_IBUF)
+     INV:I->O              1   0.612   0.357  XLXI_1/XLXI_16 (XLXI_1/XLXN_38)
+     begin scope: 'XLXI_1/XLXI_15'
+     AND2:I0->O            1   0.612   0.357  I_36_9 (M1)
+     OR2:I0->O             7   0.612   0.602  I_36_8 (O)
+     end scope: 'XLXI_1/XLXI_15'
+     AND2:I0->O            1   0.612   0.357  XLXI_1/XLXI_3/XLXI_2 (XLXI_1/XLXI_3/XLXN_2)
+     OR3:I1->O             5   0.612   0.538  XLXI_1/XLXI_3/XLXI_4 (XLXN_1)
+     AND2:I1->O            1   0.612   0.357  XLXI_2/XLXI_3/XLXI_1 (XLXI_2/XLXI_3/XLXN_1)
+     OR3:I2->O             5   0.612   0.538  XLXI_2/XLXI_3/XLXI_4 (XLXN_2)
+     AND2:I1->O            1   0.612   0.357  XLXI_3/XLXI_3/XLXI_1 (XLXI_3/XLXI_3/XLXN_1)
+     OR3:I2->O             5   0.612   0.538  XLXI_3/XLXI_3/XLXI_4 (XLXN_3)
+     AND2:I1->O            1   0.612   0.357  XLXI_4/XLXI_3/XLXI_1 (XLXI_4/XLXI_3/XLXN_1)
+     OR3:I2->O             5   0.612   0.538  XLXI_4/XLXI_3/XLXI_4 (XLXN_175)
+     AND2:I1->O            1   0.612   0.357  XLXI_10/XLXI_3/XLXI_1 (XLXI_10/XLXI_3/XLXN_1)
+     OR3:I2->O             5   0.612   0.538  XLXI_10/XLXI_3/XLXI_4 (XLXN_6)
+     AND2:I1->O            1   0.612   0.357  XLXI_11/XLXI_3/XLXI_1 (XLXI_11/XLXI_3/XLXN_1)
+     OR3:I2->O             5   0.612   0.538  XLXI_11/XLXI_3/XLXI_4 (XLXN_8)
+     AND2:I1->O            1   0.612   0.357  XLXI_12/XLXI_3/XLXI_1 (XLXI_12/XLXI_3/XLXN_1)
+     OR3:I2->O             5   0.612   0.538  XLXI_12/XLXI_3/XLXI_4 (XLXN_10)
+     AND2:I1->O            1   0.612   0.357  XLXI_13/XLXI_3/XLXI_1 (XLXI_13/XLXI_3/XLXN_1)
+     OR3:I2->O             5   0.612   0.538  XLXI_13/XLXI_3/XLXI_4 (XLXN_176)
+     AND2:I1->O            1   0.612   0.357  XLXI_18/XLXI_3/XLXI_1 (XLXI_18/XLXI_3/XLXN_1)
+     OR3:I2->O             5   0.612   0.538  XLXI_18/XLXI_3/XLXI_4 (XLXN_63)
+     AND2:I1->O            1   0.612   0.357  XLXI_19/XLXI_3/XLXI_1 (XLXI_19/XLXI_3/XLXN_1)
+     OR3:I2->O             5   0.612   0.538  XLXI_19/XLXI_3/XLXI_4 (XLXN_65)
+     AND2:I1->O            1   0.612   0.357  XLXI_20/XLXI_3/XLXI_1 (XLXI_20/XLXI_3/XLXN_1)
+     OR3:I2->O             5   0.612   0.538  XLXI_20/XLXI_3/XLXI_4 (XLXN_67)
+     AND2:I1->O            1   0.612   0.357  XLXI_21/XLXI_3/XLXI_1 (XLXI_21/XLXI_3/XLXN_1)
+     OR3:I2->O             5   0.612   0.538  XLXI_21/XLXI_3/XLXI_4 (XLXN_174)
+     AND2:I1->O            1   0.612   0.357  XLXI_22/XLXI_3/XLXI_1 (XLXI_22/XLXI_3/XLXN_1)
+     OR3:I2->O             5   0.612   0.538  XLXI_22/XLXI_3/XLXI_4 (XLXN_89)
+     AND2:I1->O            1   0.612   0.357  XLXI_23/XLXI_3/XLXI_1 (XLXI_23/XLXI_3/XLXN_1)
+     OR3:I2->O             5   0.612   0.538  XLXI_23/XLXI_3/XLXI_4 (XLXN_91)
+     AND2:I1->O            1   0.612   0.357  XLXI_24/XLXI_3/XLXI_1 (XLXI_24/XLXI_3/XLXN_1)
+     OR3:I2->O             6   0.612   0.569  XLXI_24/XLXI_3/XLXI_4 (XLXN_93)
+     INV:I->O              2   0.612   0.380  XLXI_25/XLXI_3/XLXI_35 (XLXI_25/XLXI_3/cinot)
+     AND3:I2->O            1   0.612   0.357  XLXI_25/XLXI_3/XLXI_7 (XLXI_25/XLXI_3/XLXN_13)
+     OR4:I1->O             2   0.612   0.380  XLXI_25/XLXI_3/XLXI_9 (XLXN_177)
+     begin scope: 'XLXI_25/XLXI_17'
+     begin scope: 'I_M23'
+     AND3B1:I2->O          1   0.612   0.357  I_36_31 (M0)
+     OR2:I1->O             1   0.612   0.000  I_36_38 (O)
+     end scope: 'I_M23'
+     MUXF5_L:I1->LO        1   0.278   0.000  I_M03 (M03)
+     MUXF6:I0->O           2   0.451   0.380  I_O (O)
+     end scope: 'XLXI_25/XLXI_17'
+     begin scope: 'XLXI_36'
+     NOR4:I0->O            1   0.612   0.000  I_36_110 (S0)
+     MUXCY_L:S->LO         1   0.404   0.000  I_36_2 (C0)
+     MUXCY_L:CI->LO        1   0.052   0.000  I_36_129 (C1)
+     MUXCY_L:CI->LO        1   0.052   0.000  I_36_147 (C2)
+     MUXCY:CI->O           1   0.399   0.357  I_36_165 (O)
+     end scope: 'XLXI_36'
+     OBUF:I->O                 3.169          zero_OBUF (zero)
+    ----------------------------------------
+    Total                     47.141ns (29.778ns logic, 17.363ns route)
+                                       (63.2% logic, 36.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.45 secs
+ 
+--> 
+
+Total memory usage is 4521788 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
