@@ -1,0 +1,61 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/AluTest_AluTest_sch_tb_isim_beh.exe -prj C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/AluTest_AluTest_sch_tb_beh.prj work.AluTest_AluTest_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/add1b.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/mux2x16.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/alu1b.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/ZE.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/SL1.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/SE.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/reg16.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/mux4x16.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/alu16b.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/AluTest.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/../TestALUIntegration.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module AND2
+Compiling module OR2
+Compiling module OR3
+Compiling module AND3
+Compiling module OR4
+Compiling module INV
+Compiling module add1b_MUSER_AluTest
+Compiling module VCC
+Compiling module AND2B1
+Compiling module M2_1_MXILINX_AluTest
+Compiling module AND3B1
+Compiling module M2_1E_MXILINX_AluTest
+Compiling module MUXF5_L
+Compiling module MUXF6
+Compiling module M8_1E_MXILINX_AluTest
+Compiling module GND
+Compiling module alu1b_MUSER_AluTest
+Compiling module XOR2
+Compiling module MUXCY_L
+Compiling module FMAP
+Compiling module NOR4
+Compiling module MUXCY
+Compiling module NOR16_MXILINX_AluTest
+Compiling module alu16b_MUSER_AluTest
+Compiling module mux2x16_MUSER_AluTest
+Compiling module mux4x16_MUSER_AluTest
+Compiling module BUF
+Compiling module ZE_MUSER_AluTest
+Compiling module SE_MUSER_AluTest
+Compiling module SL1_MUSER_AluTest
+Compiling module FDCE
+Compiling module FD16CE_MXILINX_AluTest
+Compiling module reg16_MUSER_AluTest
+Compiling module AluTest
+Compiling module AluTest_AluTest_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 36 Verilog Units
+Built simulation executable C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/AluTest_AluTest_sch_tb_isim_beh.exe
+Fuse Memory Usage: 28524 KB
+Fuse CPU Usage: 1046 ms

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym mux16b8 {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/mux16b8.sch} {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/mux16b8.sym} 

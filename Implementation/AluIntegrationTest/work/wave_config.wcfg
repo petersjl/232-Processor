@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/AluTest_AluTest_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="AluTest_AluTest_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/AluTest_AluTest_sch_tb/ovfl" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ovfl</obj_property>
+      <obj_property name="ObjectShortName">ovfl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AluTest_AluTest_sch_tb/ALUOutData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUOutData[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOutData[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AluTest_AluTest_sch_tb/RegOutB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RegOutB[15:0]</obj_property>
+      <obj_property name="ObjectShortName">RegOutB[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AluTest_AluTest_sch_tb/Imm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Imm[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Imm[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AluTest_AluTest_sch_tb/ALUSrcB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUSrcB[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUSrcB[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AluTest_AluTest_sch_tb/AluOp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">AluOp[2:0]</obj_property>
+      <obj_property name="ObjectShortName">AluOp[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AluTest_AluTest_sch_tb/RegOutA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RegOutA[15:0]</obj_property>
+      <obj_property name="ObjectShortName">RegOutA[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AluTest_AluTest_sch_tb/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AluTest_AluTest_sch_tb/ALUOutWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUOutWrite</obj_property>
+      <obj_property name="ObjectShortName">ALUOutWrite</obj_property>
+   </wvobject>
+</wave_config>

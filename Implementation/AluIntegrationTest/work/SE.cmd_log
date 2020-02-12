@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym SE {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/SE.sch} {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/SE.sym} 
