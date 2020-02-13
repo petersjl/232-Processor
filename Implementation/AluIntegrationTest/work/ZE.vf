@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ZE.vf
+// /___/   /\     Timestamp : 02/12/2020 18:07:19
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/ZE.vf" -w "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/ZE.sch"
+//Design Name: ZE
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module ZE(INPUT, 
+          OUTPUT);
+
+    input [7:0] INPUT;
+   output [15:0] OUTPUT;
+   
+   
+   BUF  XLXI_25 (.I(INPUT[0]), 
+                .O(OUTPUT[0]));
+   BUF  XLXI_26 (.I(INPUT[1]), 
+                .O(OUTPUT[1]));
+   BUF  XLXI_27 (.I(INPUT[2]), 
+                .O(OUTPUT[2]));
+   BUF  XLXI_28 (.I(INPUT[3]), 
+                .O(OUTPUT[3]));
+   BUF  XLXI_29 (.I(INPUT[6]), 
+                .O(OUTPUT[6]));
+   BUF  XLXI_30 (.I(INPUT[7]), 
+                .O(OUTPUT[7]));
+   BUF  XLXI_31 (.I(INPUT[4]), 
+                .O(OUTPUT[4]));
+   BUF  XLXI_32 (.I(INPUT[5]), 
+                .O(OUTPUT[5]));
+   GND  XLXI_42 (.G(OUTPUT[12]));
+   GND  XLXI_43 (.G(OUTPUT[8]));
+   GND  XLXI_44 (.G(OUTPUT[9]));
+   GND  XLXI_45 (.G(OUTPUT[13]));
+   GND  XLXI_46 (.G(OUTPUT[10]));
+   GND  XLXI_47 (.G(OUTPUT[11]));
+   GND  XLXI_48 (.G(OUTPUT[14]));
+   GND  XLXI_49 (.G(OUTPUT[15]));
+endmodule

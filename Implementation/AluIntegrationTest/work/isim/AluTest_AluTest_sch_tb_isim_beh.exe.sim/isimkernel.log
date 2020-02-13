@@ -1,0 +1,28 @@
+Command line:
+   AluTest_AluTest_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49735
+
+Wed Feb 12 18:17:02 2020
+
+
+ Elaboration Time: 0.390625 sec
+
+ Current Memory Usage: 6155.87 Meg
+
+ Total Signals          : 4328
+ Total Nets             : 1017
+ Total Signal Drivers   : 971
+ Total Blocks           : 976
+ Total Primitive Blocks : 787
+ Total Processes        : 1090
+ Total Traceable Variables  : 112
+ Total Scalar Nets and Variables : 1293
+
+ Total Simulation Time: 0.46875 sec
+
+ Current Memory Usage: 6155.84 Meg
+
+Wed Feb 12 18:17:42 2020
+

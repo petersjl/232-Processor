@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3e -refsym alu16b {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/alu16b.sch} {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/alu16b.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym alu16b {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/alu16b.sch} {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/alu16b.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym alu16b {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/alu16b.sch} {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/alu16b.sym} 

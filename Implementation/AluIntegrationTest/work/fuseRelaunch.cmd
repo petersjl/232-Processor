@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/AluTest_AluTest_sch_tb_isim_beh.exe" -prj "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/AluTest_AluTest_sch_tb_beh.prj" "work.AluTest_AluTest_sch_tb" "work.glbl" 

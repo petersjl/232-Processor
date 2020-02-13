@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -refsym ZE {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/ZE.sch} {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/ZE.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym ZE {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/ZE.sch} {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/ZE.sym} 

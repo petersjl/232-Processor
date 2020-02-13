@@ -1,0 +1,8 @@
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/add1b.vf,-w,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/add1b.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/alu1b.vf,-w,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/alu1b.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/alu16b.vf,-w,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/alu16b.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/SE.vf,-w,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/SE.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/SL1.vf,-w,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/SL1.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/ZE.vf,-w,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/ZE.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/AluTest.vf,-w,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/AluTest.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work/reg16.vf,-w,C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/reg16.sch

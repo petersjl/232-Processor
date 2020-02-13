@@ -28,3 +28,8 @@ Milestone 4 Work:
 
 Meeting 2/5/20 (2 hours)
 Our group met and designed a finite state machine for our project. I created a digital version and put it in the design documents. We uploaded our tested and completed components to git as well.
+
+Milestone 5 Work:
+
+Meeting 2/12/20 (2 hours)
+Our group put components together in Xilinx to form small groups of parts and tested them. We updated the design document as well.
