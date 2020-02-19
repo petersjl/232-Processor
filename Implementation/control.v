@@ -25,7 +25,8 @@ module CHINPO_control_unit
 	MemRead,
 	RegWrite,
 	current_state,
-	next_state
+	next_state,
+	ALUOp
 );
 
 input [3:0]  Opcode;
@@ -214,7 +215,7 @@ always @ (current_state, next_state, Opcode)
 					next_state=Decode;
 				end
 			Decode:
-				begin
+				/*begin
 					if(Opcode<6)
 						next_state=DR;
 					else if(Opcode==6)
@@ -229,6 +230,22 @@ always @ (current_state, next_state, Opcode)
 						next_state=BEQ;
 					else
 						next_state=Fetch;
+				end*/
+				begin
+					if(Opcode==3)
+						next_state=JR;
+					else if (Opcode==4||Opcode==9||Opcode==10||Opcode==13)
+						next_state=I;
+					else if (Opcode<8)
+						next_state=DR;
+					else if (Opcode==8||Opcode==11)
+						next_state=J;
+					else if (Opcode==14||Opcode==15)
+						next_state=SW;
+					else if (Opcode==12&&branch)
+						next_state=BEQ;
+					else
+						next_state=Fetch;
 				end
 			DR:
 				begin
@@ -240,7 +257,8 @@ always @ (current_state, next_state, Opcode)
 				end	
 			SW:
 				begin
-					if(Opcode==9)
+					// was 9
+					if(Opcode==15)
 						next_state=SW_Write;
 					else
 						next_state=LW_Read;
@@ -251,7 +269,8 @@ always @ (current_state, next_state, Opcode)
 				end
 			J:
 				begin
-					if(Opcode==14)
+					// was 14
+					if(Opcode==11)
 						next_state=JAL;
 					else
 						next_state=Fetch;
