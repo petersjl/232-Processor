@@ -79,6 +79,28 @@
         <signal name="XLXN_181" />
         <signal name="ovfl" />
         <signal name="zero" />
+        <signal name="XLXN_184(15:0)" />
+        <signal name="outone(0)" />
+        <signal name="outone(1)" />
+        <signal name="outone(2)" />
+        <signal name="outone(3)" />
+        <signal name="outone(4)" />
+        <signal name="outone(5)" />
+        <signal name="outone(6)" />
+        <signal name="outone(7)" />
+        <signal name="outone(8)" />
+        <signal name="outone(9)" />
+        <signal name="outone(10)" />
+        <signal name="outone(11)" />
+        <signal name="outone(12)" />
+        <signal name="outone(13)" />
+        <signal name="outone(14)" />
+        <signal name="outone(15)" />
+        <signal name="outone(15:0)" />
+        <signal name="XLXN_187" />
+        <signal name="op(0)" />
+        <signal name="XLXN_190" />
+        <signal name="op(1)" />
         <port polarity="Input" name="op(2:0)" />
         <port polarity="Input" name="B(3)" />
         <port polarity="Output" name="R(15:0)" />
@@ -87,7 +109,7 @@
         <port polarity="Output" name="ovfl" />
         <port polarity="Output" name="zero" />
         <blockdef name="alu1b">
-            <timestamp>2009-1-15T22:11:15</timestamp>
+            <timestamp>2020-2-11T4:29:30</timestamp>
             <rect width="256" x="64" y="-320" height="320" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
@@ -148,6 +170,47 @@
             <line x2="216" y1="-544" y2="-544" x1="256" />
             <circle r="12" cx="204" cy="-544" />
         </blockdef>
+        <blockdef name="sll16b8i">
+            <timestamp>2020-2-19T3:53:36</timestamp>
+            <rect width="256" x="64" y="-128" height="128" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-108" height="24" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+        </blockdef>
+        <blockdef name="mux2x16">
+            <timestamp>2020-2-19T4:14:46</timestamp>
+            <rect width="256" x="64" y="-192" height="192" />
+            <rect width="64" x="0" y="-172" height="24" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-172" height="24" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+        </blockdef>
+        <blockdef name="and3">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-64" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="64" y1="-192" y2="-192" x1="0" />
+            <line x2="192" y1="-128" y2="-128" x1="256" />
+            <line x2="144" y1="-176" y2="-176" x1="64" />
+            <line x2="64" y1="-80" y2="-80" x1="144" />
+            <arc ex="144" ey="-176" sx="144" sy="-80" r="48" cx="144" cy="-128" />
+            <line x2="64" y1="-64" y2="-192" x1="64" />
+        </blockdef>
+        <blockdef name="inv">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="160" y1="-32" y2="-32" x1="224" />
+            <line x2="128" y1="-64" y2="-32" x1="64" />
+            <line x2="64" y1="-32" y2="0" x1="128" />
+            <line x2="64" y1="0" y2="-64" x1="64" />
+            <circle r="16" cx="144" cy="-32" />
+        </blockdef>
         <block symbolname="alu1b" name="alu1b_0">
             <blockpin signalname="A(0)" name="a" />
             <blockpin signalname="op(2)" name="ci" />
@@ -156,7 +219,7 @@
             <blockpin signalname="B(0)" name="b" />
             <blockpin name="s" />
             <blockpin signalname="XLXN_1" name="co" />
-            <blockpin signalname="R(0)" name="r" />
+            <blockpin signalname="outone(0)" name="r" />
         </block>
         <block symbolname="alu1b" name="alu1b_1">
             <blockpin signalname="A(1)" name="a" />
@@ -166,7 +229,7 @@
             <blockpin signalname="B(1)" name="b" />
             <blockpin name="s" />
             <blockpin signalname="XLXN_2" name="co" />
-            <blockpin signalname="R(1)" name="r" />
+            <blockpin signalname="outone(1)" name="r" />
         </block>
         <block symbolname="alu1b" name="alu1b_2">
             <blockpin signalname="A(2)" name="a" />
@@ -176,7 +239,7 @@
             <blockpin signalname="B(2)" name="b" />
             <blockpin name="s" />
             <blockpin signalname="XLXN_3" name="co" />
-            <blockpin signalname="R(2)" name="r" />
+            <blockpin signalname="outone(2)" name="r" />
         </block>
         <block symbolname="alu1b" name="alu1b_3">
             <blockpin signalname="A(3)" name="a" />
@@ -186,7 +249,7 @@
             <blockpin signalname="B(3)" name="b" />
             <blockpin name="s" />
             <blockpin signalname="XLXN_175" name="co" />
-            <blockpin signalname="R(3)" name="r" />
+            <blockpin signalname="outone(3)" name="r" />
         </block>
         <block symbolname="alu1b" name="alu1b_4">
             <blockpin signalname="A(4)" name="a" />
@@ -196,7 +259,7 @@
             <blockpin signalname="B(4)" name="b" />
             <blockpin name="s" />
             <blockpin signalname="XLXN_6" name="co" />
-            <blockpin signalname="R(4)" name="r" />
+            <blockpin signalname="outone(4)" name="r" />
         </block>
         <block symbolname="alu1b" name="alu1b_5">
             <blockpin signalname="A(5)" name="a" />
@@ -206,7 +269,7 @@
             <blockpin signalname="B(5)" name="b" />
             <blockpin name="s" />
             <blockpin signalname="XLXN_8" name="co" />
-            <blockpin signalname="R(5)" name="r" />
+            <blockpin signalname="outone(5)" name="r" />
         </block>
         <block symbolname="alu1b" name="alu1b_6">
             <blockpin signalname="A(6)" name="a" />
@@ -216,7 +279,7 @@
             <blockpin signalname="B(6)" name="b" />
             <blockpin name="s" />
             <blockpin signalname="XLXN_10" name="co" />
-            <blockpin signalname="R(6)" name="r" />
+            <blockpin signalname="outone(6)" name="r" />
         </block>
         <block symbolname="alu1b" name="alu1b_7">
             <blockpin signalname="A(7)" name="a" />
@@ -226,7 +289,7 @@
             <blockpin signalname="B(7)" name="b" />
             <blockpin name="s" />
             <blockpin signalname="XLXN_176" name="co" />
-            <blockpin signalname="R(7)" name="r" />
+            <blockpin signalname="outone(7)" name="r" />
         </block>
         <block symbolname="alu1b" name="alu1b_8">
             <blockpin signalname="A(8)" name="a" />
@@ -236,7 +299,7 @@
             <blockpin signalname="B(8)" name="b" />
             <blockpin name="s" />
             <blockpin signalname="XLXN_63" name="co" />
-            <blockpin signalname="R(8)" name="r" />
+            <blockpin signalname="outone(8)" name="r" />
         </block>
         <block symbolname="alu1b" name="alu1b_9">
             <blockpin signalname="A(9)" name="a" />
@@ -246,7 +309,7 @@
             <blockpin signalname="B(9)" name="b" />
             <blockpin name="s" />
             <blockpin signalname="XLXN_65" name="co" />
-            <blockpin signalname="R(9)" name="r" />
+            <blockpin signalname="outone(9)" name="r" />
         </block>
         <block symbolname="alu1b" name="alu1b_10">
             <blockpin signalname="A(10)" name="a" />
@@ -256,7 +319,7 @@
             <blockpin signalname="B(10)" name="b" />
             <blockpin name="s" />
             <blockpin signalname="XLXN_67" name="co" />
-            <blockpin signalname="R(10)" name="r" />
+            <blockpin signalname="outone(10)" name="r" />
         </block>
         <block symbolname="alu1b" name="alu1b_11">
             <blockpin signalname="A(11)" name="a" />
@@ -266,7 +329,7 @@
             <blockpin signalname="B(11)" name="b" />
             <blockpin name="s" />
             <blockpin signalname="XLXN_174" name="co" />
-            <blockpin signalname="R(11)" name="r" />
+            <blockpin signalname="outone(11)" name="r" />
         </block>
         <block symbolname="alu1b" name="alu1b_12">
             <blockpin signalname="A(12)" name="a" />
@@ -276,7 +339,7 @@
             <blockpin signalname="B(12)" name="b" />
             <blockpin name="s" />
             <blockpin signalname="XLXN_89" name="co" />
-            <blockpin signalname="R(12)" name="r" />
+            <blockpin signalname="outone(12)" name="r" />
         </block>
         <block symbolname="alu1b" name="alu1b_13">
             <blockpin signalname="A(13)" name="a" />
@@ -286,7 +349,7 @@
             <blockpin signalname="B(13)" name="b" />
             <blockpin name="s" />
             <blockpin signalname="XLXN_91" name="co" />
-            <blockpin signalname="R(13)" name="r" />
+            <blockpin signalname="outone(13)" name="r" />
         </block>
         <block symbolname="alu1b" name="alu1b_14">
             <blockpin signalname="A(14)" name="a" />
@@ -296,7 +359,7 @@
             <blockpin signalname="B(14)" name="b" />
             <blockpin name="s" />
             <blockpin signalname="XLXN_93" name="co" />
-            <blockpin signalname="R(14)" name="r" />
+            <blockpin signalname="outone(14)" name="r" />
         </block>
         <block symbolname="alu1b" name="alu1b_15">
             <blockpin signalname="A(15)" name="a" />
@@ -306,7 +369,7 @@
             <blockpin signalname="B(15)" name="b" />
             <blockpin signalname="XLXN_177" name="s" />
             <blockpin signalname="XLXN_181" name="co" />
-            <blockpin signalname="R(15)" name="r" />
+            <blockpin signalname="outone(15)" name="r" />
         </block>
         <block symbolname="gnd" name="XLXI_9">
             <blockpin signalname="G" name="G" />
@@ -334,6 +397,27 @@
             <blockpin signalname="R(7)" name="I8" />
             <blockpin signalname="R(6)" name="I9" />
             <blockpin signalname="zero" name="O" />
+        </block>
+        <block symbolname="sll16b8i" name="ShiftLeftBit">
+            <blockpin signalname="A(15:0)" name="a(15:0)" />
+            <blockpin signalname="B(15:0)" name="b(15:0)" />
+            <blockpin signalname="XLXN_184(15:0)" name="r(15:0)" />
+        </block>
+        <block symbolname="mux2x16" name="XLXI_38">
+            <blockpin signalname="outone(15:0)" name="A(15:0)" />
+            <blockpin signalname="XLXN_184(15:0)" name="B(15:0)" />
+            <blockpin signalname="XLXN_187" name="S" />
+            <blockpin signalname="R(15:0)" name="OutputExit(15:0)" />
+        </block>
+        <block symbolname="and3" name="XLXI_39">
+            <blockpin signalname="op(2)" name="I0" />
+            <blockpin signalname="XLXN_190" name="I1" />
+            <blockpin signalname="op(0)" name="I2" />
+            <blockpin signalname="XLXN_187" name="O" />
+        </block>
+        <block symbolname="inv" name="XLXI_40">
+            <blockpin signalname="op(1)" name="I" />
+            <blockpin signalname="XLXN_190" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -433,19 +517,19 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="1040" y="1968" type="branch" />
             <wire x2="1296" y1="1968" y2="1968" x1="1040" />
         </branch>
-        <branch name="R(3)">
+        <branch name="outone(3)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1920" y="1712" type="branch" />
             <wire x2="1920" y1="1712" y2="1712" x1="1680" />
         </branch>
-        <branch name="R(2)">
+        <branch name="outone(2)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1920" y="1232" type="branch" />
             <wire x2="1920" y1="1232" y2="1232" x1="1680" />
         </branch>
-        <branch name="R(1)">
+        <branch name="outone(1)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1920" y="752" type="branch" />
             <wire x2="1920" y1="752" y2="752" x1="1680" />
         </branch>
-        <branch name="R(0)">
+        <branch name="outone(0)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1920" y="272" type="branch" />
             <wire x2="1920" y1="272" y2="272" x1="1680" />
         </branch>
@@ -543,19 +627,19 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="1040" y="3888" type="branch" />
             <wire x2="1296" y1="3888" y2="3888" x1="1040" />
         </branch>
-        <branch name="R(7)">
+        <branch name="outone(7)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1920" y="3632" type="branch" />
             <wire x2="1920" y1="3632" y2="3632" x1="1680" />
         </branch>
-        <branch name="R(6)">
+        <branch name="outone(6)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1920" y="3152" type="branch" />
             <wire x2="1920" y1="3152" y2="3152" x1="1680" />
         </branch>
-        <branch name="R(5)">
+        <branch name="outone(5)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1920" y="2672" type="branch" />
             <wire x2="1920" y1="2672" y2="2672" x1="1680" />
         </branch>
-        <branch name="R(4)">
+        <branch name="outone(4)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1920" y="2192" type="branch" />
             <wire x2="1920" y1="2192" y2="2192" x1="1680" />
         </branch>
@@ -652,19 +736,19 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="2800" y="1968" type="branch" />
             <wire x2="3056" y1="1968" y2="1968" x1="2800" />
         </branch>
-        <branch name="R(11)">
+        <branch name="outone(11)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3680" y="1712" type="branch" />
             <wire x2="3680" y1="1712" y2="1712" x1="3440" />
         </branch>
-        <branch name="R(10)">
+        <branch name="outone(10)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3680" y="1232" type="branch" />
             <wire x2="3680" y1="1232" y2="1232" x1="3440" />
         </branch>
-        <branch name="R(9)">
+        <branch name="outone(9)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3680" y="752" type="branch" />
             <wire x2="3680" y1="752" y2="752" x1="3440" />
         </branch>
-        <branch name="R(8)">
+        <branch name="outone(8)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3680" y="272" type="branch" />
             <wire x2="3680" y1="272" y2="272" x1="3440" />
         </branch>
@@ -764,19 +848,19 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="2800" y="3888" type="branch" />
             <wire x2="3056" y1="3888" y2="3888" x1="2800" />
         </branch>
-        <branch name="R(15)">
+        <branch name="outone(15)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3680" y="3632" type="branch" />
             <wire x2="3680" y1="3632" y2="3632" x1="3440" />
         </branch>
-        <branch name="R(14)">
+        <branch name="outone(14)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3680" y="3152" type="branch" />
             <wire x2="3680" y1="3152" y2="3152" x1="3440" />
         </branch>
-        <branch name="R(13)">
+        <branch name="outone(13)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3680" y="2672" type="branch" />
             <wire x2="3680" y1="2672" y2="2672" x1="3440" />
         </branch>
-        <branch name="R(12)">
+        <branch name="outone(12)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3680" y="2192" type="branch" />
             <wire x2="3680" y1="2192" y2="2192" x1="3440" />
         </branch>
@@ -913,5 +997,58 @@
             <wire x2="4400" y1="880" y2="880" x1="4320" />
         </branch>
         <iomarker fontsize="28" x="4400" y="880" name="zero" orien="R0" />
+        <instance x="3904" y="1744" name="ShiftLeftBit" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="160" y="-32" type="instance" />
+        </instance>
+        <branch name="A(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3872" y="1648" type="branch" />
+            <wire x2="3904" y1="1648" y2="1648" x1="3872" />
+        </branch>
+        <branch name="B(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3872" y="1712" type="branch" />
+            <wire x2="3904" y1="1712" y2="1712" x1="3872" />
+        </branch>
+        <branch name="XLXN_184(15:0)">
+            <wire x2="3872" y1="1840" y2="2000" x1="3872" />
+            <wire x2="3904" y1="2000" y2="2000" x1="3872" />
+            <wire x2="3936" y1="2000" y2="2000" x1="3904" />
+            <wire x2="4320" y1="1840" y2="1840" x1="3872" />
+            <wire x2="4320" y1="1648" y2="1648" x1="4288" />
+            <wire x2="4320" y1="1648" y2="1840" x1="4320" />
+        </branch>
+        <instance x="3936" y="2096" name="XLXI_38" orien="R0">
+        </instance>
+        <branch name="outone(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3904" y="1936" type="branch" />
+            <wire x2="3936" y1="1936" y2="1936" x1="3904" />
+        </branch>
+        <branch name="XLXN_187">
+            <wire x2="3936" y1="2064" y2="2064" x1="3904" />
+            <wire x2="3904" y1="2064" y2="2176" x1="3904" />
+            <wire x2="4240" y1="2176" y2="2176" x1="3904" />
+            <wire x2="4240" y1="2176" y2="2304" x1="4240" />
+            <wire x2="4240" y1="2304" y2="2304" x1="4176" />
+        </branch>
+        <branch name="R(15:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4336" y="1936" type="branch" />
+            <wire x2="4336" y1="1936" y2="1936" x1="4320" />
+        </branch>
+        <instance x="3920" y="2432" name="XLXI_39" orien="R0" />
+        <branch name="op(0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3904" y="2240" type="branch" />
+            <wire x2="3920" y1="2240" y2="2240" x1="3904" />
+        </branch>
+        <branch name="XLXN_190">
+            <wire x2="3920" y1="2304" y2="2304" x1="3888" />
+        </branch>
+        <branch name="op(2)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3888" y="2368" type="branch" />
+            <wire x2="3920" y1="2368" y2="2368" x1="3888" />
+        </branch>
+        <instance x="3664" y="2336" name="XLXI_40" orien="R0" />
+        <branch name="op(1)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3632" y="2304" type="branch" />
+            <wire x2="3664" y1="2304" y2="2304" x1="3632" />
+        </branch>
     </sheet>
 </drawing>

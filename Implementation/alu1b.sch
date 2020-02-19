@@ -161,7 +161,7 @@
             <blockpin signalname="XLXN_9" name="D1" />
             <blockpin signalname="s" name="D2" />
             <blockpin signalname="a" name="D3" />
-            <blockpin signalname="g" name="D4" />
+            <blockpin signalname="b" name="D4" />
             <blockpin signalname="g" name="D5" />
             <blockpin signalname="s" name="D6" />
             <blockpin signalname="l" name="D7" />
@@ -277,7 +277,7 @@
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="224" y="880" type="branch" />
             <wire x2="224" y1="880" y2="928" x1="224" />
         </branch>
-        <branch name="g">
+        <branch name="b">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="528" type="branch" />
             <wire x2="1328" y1="528" y2="528" x1="1296" />
         </branch>
