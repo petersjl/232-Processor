@@ -242,7 +242,7 @@ always @ (current_state, next_state, Opcode)
 						next_state=J;
 					else if (Opcode==14||Opcode==15)
 						next_state=SW;
-					else if (Opcode==12&&branch)
+					else if (Opcode==12&&Branch)
 						next_state=BEQ;
 					else
 						next_state=Fetch;
