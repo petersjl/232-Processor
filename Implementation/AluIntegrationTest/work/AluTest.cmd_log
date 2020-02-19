@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym AluTest {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/AluTest.sch} {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/AluTest.sym} 
+sch2hdl -intstyle ise -family spartan3e -verilog AluTest_drc.vf -w {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/AluTest.sch} 
+sch2hdl -intstyle ise -family spartan3e -verilog AluTest_drc.vf -w {C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/AluTest.sch} 
