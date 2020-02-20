@@ -30,7 +30,6 @@
         <signal name="O12" />
         <signal name="O4" />
         <signal name="O3" />
-        <signal name="O0" />
         <signal name="O8" />
         <signal name="O9" />
         <signal name="O2" />
@@ -299,7 +298,7 @@
         <block symbolname="decode4b16" name="XLXI_55">
             <blockpin signalname="DestReg(3:0)" name="A(3:0)" />
             <blockpin signalname="Write" name="Enable" />
-            <blockpin signalname="O0" name="O0" />
+            <blockpin name="O0" />
             <blockpin signalname="O1" name="O1" />
             <blockpin signalname="O2" name="O2" />
             <blockpin signalname="O3" name="O3" />
@@ -357,9 +356,6 @@
             <blockpin signalname="MoveData(15:0)" name="B(15:0)" />
             <blockpin signalname="MoveB" name="S" />
             <blockpin signalname="XLXN_60(15:0)" name="OutputExit(15:0)" />
-        </block>
-        <block symbolname="gnd" name="XLXI_64">
-            <blockpin signalname="O0" name="G" />
         </block>
         <block symbolname="constant" name="XLXI_65">
             <attr value="0000" name="CValue">
@@ -585,9 +581,6 @@
         <branch name="O2">
             <attrtext style="alignment:SOFT-VRIGHT;fontsize:28;fontname:Arial" attrname="Name" x="912" y="560" type="branch" />
             <wire x2="912" y1="464" y2="560" x1="912" />
-        </branch>
-        <branch name="O0">
-            <wire x2="1040" y1="464" y2="560" x1="1040" />
         </branch>
         <instance x="48" y="80" name="XLXI_55" orien="R90">
         </instance>
@@ -832,7 +825,6 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1856" y="176" type="branch" />
             <wire x2="1856" y1="176" y2="176" x1="1728" />
         </branch>
-        <instance x="976" y="688" name="XLXI_64" orien="R0" />
         <branch name="XLXN_66">
             <wire x2="2912" y1="2224" y2="2224" x1="2848" />
         </branch>

@@ -26,7 +26,8 @@ module CHINPO_control_unit
 	RegWrite,
 	current_state,
 	next_state,
-	ALUOp
+	ALUOp,
+	PcIn
 );
 
 input [3:0]  Opcode;
@@ -51,6 +52,7 @@ output MemAddr;
 output MemWrite;
 output MemRead;
 output RegWrite;
+output PcIn;
 output [3:0] current_state;
 output [3:0] next_state;
 output [1:0] ALUOp;
@@ -69,6 +71,7 @@ reg MemWrite;
 reg MemRead;
 reg RegWrite;
 reg [1:0] ALUOp;
+reg PcIn;
 
 //state flip-flops
 reg [3:0]    current_state;
@@ -110,6 +113,8 @@ always @ (current_state)
 		CLRB=0;
 		MVA=0;
 		MVB=0;
+		MemAddr = 0;
+		PcIn = 0;
 
 		case(current_state)
 
@@ -119,7 +124,7 @@ always @ (current_state)
 					PCWrite=1;
 					ALUSrcA=0;
 					ALUSrcB=4;
-					ALUOp=2;
+					ALUOp=0;
 				end
 			Decode:
 				begin
@@ -129,7 +134,7 @@ always @ (current_state)
 				end
 			DR:
 				begin
-					ALUOp=1;
+					ALUOp=2;
 					MVA=IR3;
 					MVB=IR2;
 					CLRA=IR1;
@@ -141,7 +146,7 @@ always @ (current_state)
 				begin
 					ALUOp=2;
 					ALUSrcA=1;
-					ALUSrcB=3;
+					ALUSrcB=1;
 				end
 			SW:
 				begin
@@ -151,9 +156,6 @@ always @ (current_state)
 				end
 			BEQ:
 				begin
-					ALUSrcA=1;
-					ALUSrcB=0;
-					ALUOp=01;
 					PCWrite=1;
 				end
 			J:
@@ -161,10 +163,11 @@ always @ (current_state)
 					PCWrite=1;
 					ALUOp=3;
 					ALUSrcA=0;
+					PcIn=1;
 				end
 			JR:
 				begin
-					ALUSrcA=0;
+					ALUSrcA=1;
 					ALUOp=3;
 					MVA=IR3;
 					MVB=IR2;
@@ -215,7 +218,7 @@ always @ (current_state, next_state, Opcode)
 					next_state=Decode;
 				end
 			Decode:
-				begin
+				/*begin
 					if(Opcode<6)
 						next_state=DR;
 					else if(Opcode==6)
@@ -230,6 +233,22 @@ always @ (current_state, next_state, Opcode)
 						next_state=BEQ;
 					else
 						next_state=Fetch;
+				end*/
+				begin
+					if(Opcode==3)
+						next_state=JR;
+					else if (Opcode==4||Opcode==9||Opcode==10||Opcode==13)
+						next_state=I;
+					else if (Opcode<8)
+						next_state=DR;
+					else if (Opcode==8||Opcode==11)
+						next_state=J;
+					else if (Opcode==14||Opcode==15)
+						next_state=SW;
+					else if (Opcode==12&&Branch)
+						next_state=BEQ;
+					else
+						next_state=Fetch;
 				end
 			DR:
 				begin
@@ -241,7 +260,8 @@ always @ (current_state, next_state, Opcode)
 				end	
 			SW:
 				begin
-					if(Opcode==9)
+					// was 9
+					if(Opcode==15)
 						next_state=SW_Write;
 					else
 						next_state=LW_Read;
@@ -252,7 +272,8 @@ always @ (current_state, next_state, Opcode)
 				end
 			J:
 				begin
-					if(Opcode==14)
+					// was 14
+					if(Opcode==11)
 						next_state=JAL;
 					else
 						next_state=Fetch;
