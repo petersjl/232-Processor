@@ -33,3 +33,8 @@ Milestone 5 Work:
 
 Meeting 2/12/20 (2 hours)
 Our group put components together in Xilinx to form small groups of parts and tested them. We updated the design document as well.
+
+Milestone 6 Work:
+
+Meeting 2/19/20 (4 hours)
+Will and Cullen tested each command through Xilinx. Joe and I found the CPI and number of instructions for Euclid’s Algorithm. 
