@@ -62,6 +62,8 @@ module TestAluControl;
 		Opcode = 4'b1111;
 		#20;
 		Opcode = 4'b0010;
+		#20;
+		Opcode = 4'b0000;
 		// Add stimulus here
 
 	end

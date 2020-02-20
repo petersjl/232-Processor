@@ -72,14 +72,6 @@
             <line x2="64" y1="0" y2="-64" x1="64" />
             <circle r="16" cx="144" cy="-32" />
         </blockdef>
-        <block symbolname="and5" name="XLXI_1">
-            <blockpin signalname="Enable" name="I0" />
-            <blockpin signalname="nA3" name="I1" />
-            <blockpin signalname="nA2" name="I2" />
-            <blockpin signalname="nA1" name="I3" />
-            <blockpin signalname="nA0" name="I4" />
-            <blockpin signalname="O0" name="O" />
-        </block>
         <block symbolname="and5" name="XLXI_2">
             <blockpin signalname="Enable" name="I0" />
             <blockpin signalname="A(3)" name="I1" />
@@ -216,6 +208,14 @@
             <blockpin signalname="A(3)" name="I" />
             <blockpin signalname="nA3" name="O" />
         </block>
+        <block symbolname="and5" name="XLXI_21">
+            <blockpin signalname="Enable" name="I0" />
+            <blockpin signalname="nA3" name="I1" />
+            <blockpin signalname="nA2" name="I2" />
+            <blockpin signalname="nA1" name="I3" />
+            <blockpin signalname="nA0" name="I4" />
+            <blockpin signalname="O0" name="O" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <branch name="A(3:0)">
@@ -226,7 +226,6 @@
         <branch name="Enable">
             <wire x2="272" y1="496" y2="496" x1="224" />
         </branch>
-        <instance x="1568" y="400" name="XLXI_1" orien="R0" />
         <instance x="1568" y="720" name="XLXI_2" orien="R0" />
         <instance x="1568" y="1072" name="XLXI_3" orien="R0" />
         <instance x="1568" y="1408" name="XLXI_4" orien="R0" />
@@ -666,5 +665,6 @@
         <iomarker fontsize="28" x="2720" y="912" name="O5" orien="R0" />
         <iomarker fontsize="28" x="2720" y="560" name="O9" orien="R0" />
         <iomarker fontsize="28" x="2720" y="224" name="O1" orien="R0" />
+        <instance x="1568" y="400" name="XLXI_21" orien="R0" />
     </sheet>
 </drawing>
