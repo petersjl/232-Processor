@@ -10,6 +10,7 @@ module CHINPO_control_unit
 	IR1,
 	IR2,
 	IR3,
+	Int,
 
 	PCWrite,
 	ALUSrcA,
@@ -27,7 +28,8 @@ module CHINPO_control_unit
 	current_state,
 	next_state,
 	ALUOp,
-	PcIn
+	PcIn,
+	MemData
 );
 
 input [3:0]  Opcode;
@@ -38,6 +40,7 @@ input IR0;
 input IR1;
 input IR2;
 input IR3;
+input Int;
 
 output PCWrite;
 output [2:0] ALUSrcB;
@@ -48,14 +51,15 @@ output MVA;
 output MVB;
 output WriteDataSrc;
 output IRWrite;
-output MemAddr;
+output [1:0] MemAddr;
 output MemWrite;
 output MemRead;
 output RegWrite;
-output PcIn;
+output [1:0] PcIn;
 output [3:0] current_state;
 output [3:0] next_state;
 output [1:0] ALUOp;
+output MemData;
 
 reg PCWrite;
 reg [2:0] ALUSrcB;
@@ -66,12 +70,13 @@ reg MVA;
 reg MVB;
 reg WriteDataSrc;
 reg IRWrite;
-reg MemAddr;
+reg [1:0] MemAddr;
 reg MemWrite;
 reg MemRead;
 reg RegWrite;
 reg [1:0] ALUOp;
-reg PcIn;
+reg [1:0] PcIn;
+reg MemData;
 
 //state flip-flops
 reg [3:0]    current_state;
@@ -92,6 +97,7 @@ parameter	LW_Read = 10;
 parameter	LW_Write = 11;
 parameter	JAL = 12;
 parameter	RESET_STATE = 13;
+parameter   Interrupt = 14;
 
 //register calculation
 	always @ (posedge CLK, posedge Reset)
@@ -115,6 +121,7 @@ always @ (current_state)
 		MVB=0;
 		MemAddr = 0;
 		PcIn = 0;
+		MemData=0;
 
 		case(current_state)
 
@@ -199,6 +206,14 @@ always @ (current_state)
 					RegWrite=1;
 					WriteDataSrc=0;
 				end
+			Interrupt:
+				begin
+					PCWrite=1;
+					MemWrite=1;
+					PcIn=3;
+					MemAddr=3;
+					MemData=1;
+				end
 			RESET_STATE:
 				begin
 				end
@@ -268,7 +283,10 @@ always @ (current_state, next_state, Opcode)
 				end
 			BEQ:
 				begin
-					next_state=Fetch;
+					if(Int==1)
+						next_state=Interrupt;
+					else
+						next_state=Fetch;
 				end
 			J:
 				begin
@@ -284,11 +302,17 @@ always @ (current_state, next_state, Opcode)
 				end
 			DR_Write:
 				begin
-					next_state=Fetch;
+					if(Int==1)
+						next_state=Interrupt;
+					else
+						next_state=Fetch;
 				end
 			SW_Write:
 				begin
-					next_state=Fetch;
+					if(Int==1)
+						next_state=Interrupt;
+					else
+						next_state=Fetch;
 				end
 			LW_Read:
 				begin
@@ -296,9 +320,19 @@ always @ (current_state, next_state, Opcode)
 				end
 			LW_Write:
 				begin
-					next_state=Fetch;
+					if(Int==1)
+						next_state=Interrupt;
+					else
+						next_state=Fetch;
 				end
 			JAL:
+				begin
+					if(Int==1)
+						next_state=Interrupt;
+					else
+						next_state=Fetch;
+				end
+			Interrupt:
 				begin
 					next_state=Fetch;
 				end
