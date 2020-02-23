@@ -6,11 +6,13 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="pcout(15:0)" />
+        <signal name="pcout(15:0)">
+        </signal>
         <signal name="XLXN_6(3:0)" />
         <signal name="XLXN_7(3:0)" />
         <signal name="XLXN_9(15:0)" />
-        <signal name="mdr(15:0)" />
+        <signal name="mdr(15:0)">
+        </signal>
         <signal name="regoutA(15:0)" />
         <signal name="regoutB(15:0)" />
         <signal name="XLXN_26(15:0)" />
@@ -21,7 +23,8 @@
         <signal name="XLXN_38(15:0)" />
         <signal name="aluOpOut(2:0)" />
         <signal name="aluout(15:0)" />
-        <signal name="PCWrite" />
+        <signal name="PCWrite">
+        </signal>
         <signal name="ALUSrcA" />
         <signal name="CLRA" />
         <signal name="CLRB" />
@@ -29,21 +32,27 @@
         <signal name="MVB" />
         <signal name="WriteDataSrc" />
         <signal name="IRWrite" />
-        <signal name="MemAddr" />
+        <signal name="MemAddr">
+        </signal>
         <signal name="RegWrite" />
         <signal name="ALUSrcB(2:0)" />
         <signal name="MemWrite" />
         <signal name="CLK" />
         <signal name="Op(3:0)" />
-        <signal name="Instruction(15:0)" />
+        <signal name="Instruction(15:0)">
+        </signal>
         <signal name="XLXN_74" />
         <signal name="XLXN_76" />
         <signal name="reset" />
         <signal name="XLXN_79" />
-        <signal name="current_state(3:0)" />
-        <signal name="memerr" />
-        <signal name="mem_out(15:0)" />
-        <signal name="memoryaddress(15:0)" />
+        <signal name="current_state(3:0)">
+        </signal>
+        <signal name="memerr">
+        </signal>
+        <signal name="mem_out(15:0)">
+        </signal>
+        <signal name="memoryaddress(15:0)">
+        </signal>
         <signal name="aluinA(15:0)" />
         <signal name="aluinB(15:0)" />
         <signal name="aluop(1:0)" />
@@ -56,23 +65,14 @@
         <signal name="XLXN_141(15:0)" />
         <signal name="XLXN_144(15:0)" />
         <signal name="PcIn" />
-        <port polarity="Output" name="pcout(15:0)" />
-        <port polarity="Output" name="mdr(15:0)" />
         <port polarity="Output" name="regoutA(15:0)" />
         <port polarity="Output" name="regoutB(15:0)" />
         <port polarity="Output" name="aluOpOut(2:0)" />
         <port polarity="Output" name="aluout(15:0)" />
-        <port polarity="Output" name="PCWrite" />
-        <port polarity="Output" name="MemAddr" />
         <port polarity="Output" name="ALUSrcB(2:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Output" name="Op(3:0)" />
-        <port polarity="Output" name="Instruction(15:0)" />
         <port polarity="Input" name="reset" />
-        <port polarity="Output" name="current_state(3:0)" />
-        <port polarity="Output" name="memerr" />
-        <port polarity="Output" name="mem_out(15:0)" />
-        <port polarity="Output" name="memoryaddress(15:0)" />
         <port polarity="Output" name="aluinA(15:0)" />
         <port polarity="Output" name="aluinB(15:0)" />
         <blockdef name="reg16">
@@ -467,10 +467,12 @@
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
         <instance x="256" y="1472" name="PC" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="0" y="0" type="instance" />
         </instance>
         <instance x="784" y="1472" name="MemAddrMux" orien="R0">
         </instance>
         <branch name="pcout(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="672" type="branch" />
             <wire x2="704" y1="672" y2="672" x1="608" />
             <wire x2="704" y1="672" y2="1312" x1="704" />
             <wire x2="784" y1="1312" y2="1312" x1="704" />
@@ -624,6 +626,7 @@
             <wire x2="2720" y1="3968" y2="3968" x1="2672" />
         </branch>
         <branch name="PCWrite">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="240" y="1376" type="branch" />
             <wire x2="256" y1="1376" y2="1376" x1="240" />
         </branch>
         <branch name="ALUSrcA">
@@ -641,6 +644,7 @@
             <wire x2="2064" y1="1232" y2="1232" x1="2048" />
         </branch>
         <branch name="MemAddr">
+            <attrtext style="alignment:SOFT-VRIGHT;fontsize:28;fontname:Arial" attrname="Name" x="784" y="1472" type="branch" />
             <wire x2="784" y1="1440" y2="1472" x1="784" />
         </branch>
         <branch name="MemWrite">
@@ -679,6 +683,7 @@
             <wire x2="2544" y1="1040" y2="1040" x1="2496" />
         </branch>
         <branch name="Instruction(15:0)">
+            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2592" y="880" type="branch" />
             <wire x2="2544" y1="976" y2="976" x1="2496" />
             <wire x2="2592" y1="976" y2="976" x1="2544" />
             <wire x2="2592" y1="880" y2="976" x1="2592" />
@@ -731,6 +736,7 @@
             <wire x2="2208" y1="4096" y2="4096" x1="2160" />
         </branch>
         <branch name="current_state(3:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="4032" type="branch" />
             <wire x2="2720" y1="4032" y2="4032" x1="2672" />
         </branch>
         <instance x="3952" y="752" name="ALUControlUnit" orien="R90">
@@ -740,11 +746,13 @@
             <wire x2="3984" y1="688" y2="752" x1="3984" />
         </branch>
         <branch name="memerr">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1856" y="1664" type="branch" />
             <wire x2="1920" y1="1664" y2="1664" x1="1856" />
             <wire x2="1920" y1="1376" y2="1376" x1="1872" />
             <wire x2="1920" y1="1376" y2="1664" x1="1920" />
         </branch>
         <branch name="mem_out(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1760" y="976" type="branch" />
             <wire x2="1920" y1="976" y2="976" x1="1760" />
             <wire x2="1920" y1="976" y2="1312" x1="1920" />
             <wire x2="1952" y1="1312" y2="1312" x1="1920" />
@@ -753,6 +761,7 @@
             <wire x2="1920" y1="1312" y2="1312" x1="1872" />
         </branch>
         <branch name="memoryaddress(15:0)">
+            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1360" y="1200" type="branch" />
             <wire x2="1360" y1="1312" y2="1312" x1="1168" />
             <wire x2="1376" y1="1312" y2="1312" x1="1360" />
             <wire x2="1360" y1="1200" y2="1312" x1="1360" />
@@ -772,7 +781,6 @@
             <wire x2="3968" y1="1488" y2="1488" x1="3952" />
             <wire x2="3952" y1="1488" y2="1664" x1="3952" />
         </branch>
-        <iomarker fontsize="28" x="1760" y="976" name="mem_out(15:0)" orien="R180" />
         <instance x="3424" y="1248" name="ALUSrcAMux" orien="R0">
         </instance>
         <iomarker fontsize="28" x="3520" y="880" name="regoutA(15:0)" orien="R270" />
@@ -790,13 +798,8 @@
         <iomarker fontsize="28" x="3904" y="1664" name="aluinA(15:0)" orien="R90" />
         <iomarker fontsize="28" x="3952" y="1664" name="aluinB(15:0)" orien="R90" />
         <iomarker fontsize="28" x="3520" y="2080" name="ALUSrcB(2:0)" orien="R0" />
-        <iomarker fontsize="28" x="1360" y="1200" name="memoryaddress(15:0)" orien="R270" />
-        <iomarker fontsize="28" x="240" y="1376" name="PCWrite" orien="R180" />
-        <iomarker fontsize="28" x="608" y="672" name="pcout(15:0)" orien="R180" />
-        <iomarker fontsize="28" x="784" y="1472" name="MemAddr" orien="R90" />
         <iomarker fontsize="28" x="3376" y="1440" name="regoutB(15:0)" orien="R270" />
         <iomarker fontsize="28" x="2544" y="1488" name="Op(3:0)" orien="R0" />
-        <iomarker fontsize="28" x="2720" y="4032" name="current_state(3:0)" orien="R0" />
         <instance x="1376" y="1600" name="MemoryUnit" orien="R0">
         </instance>
         <branch name="MemRead">
@@ -807,7 +810,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2032" y="1488" type="branch" />
             <wire x2="2064" y1="1488" y2="1488" x1="2032" />
         </branch>
-        <iomarker fontsize="28" x="2592" y="880" name="Instruction(15:0)" orien="R270" />
         <branch name="ClearA">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="3328" type="branch" />
             <wire x2="2720" y1="3328" y2="3328" x1="2672" />
@@ -850,8 +852,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4528" y="1488" type="branch" />
             <wire x2="4560" y1="1488" y2="1488" x1="4528" />
         </branch>
-        <iomarker fontsize="28" x="2352" y="1728" name="mdr(15:0)" orien="R270" />
-        <iomarker fontsize="28" x="1856" y="1664" name="memerr" orien="R180" />
         <instance x="1568" y="3680" name="comparator" orien="R0" />
         <branch name="regoutA(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1440" y="3360" type="branch" />
@@ -891,6 +891,7 @@
             <wire x2="2400" y1="1904" y2="1920" x1="2400" />
         </branch>
         <branch name="mdr(15:0)">
+            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2352" y="1728" type="branch" />
             <wire x2="2352" y1="1808" y2="1808" x1="2336" />
             <wire x2="2400" y1="1808" y2="1808" x1="2352" />
             <wire x2="2352" y1="1728" y2="1808" x1="2352" />

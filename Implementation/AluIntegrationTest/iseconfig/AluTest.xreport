@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-02-11T22:22:32</DateModified>
+  <DateModified>2020-02-22T17:17:54</DateModified>
   <ModuleName>AluTest</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/iseconfig/AluTest.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/AluIntegrationTest/work</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/petersjl/Documents/School/CSSE/232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Implementation/AluIntegrationTest/iseconfig/AluTest.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/petersjl/Documents/School/CSSE/232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Implementation/AluIntegrationTest/work\</ImplementationReportsDirectory>
   <DateInitialized>2020-02-11T22:22:32</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

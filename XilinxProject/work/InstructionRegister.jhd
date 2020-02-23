@@ -1,0 +1,3 @@
+MODULE InstructionRegister
+	SUBMODULE reg16
+		INSTANCE XLXI_1

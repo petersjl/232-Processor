@@ -1,6 +1,11 @@
 #
-# Simple LEDs 
-# Require only 3.5mA. 
+#
+#
+NET "CLK" PERIOD = 60.0ns HIGH 50%;
+#
+# soldered 50MHz Clock.
+# 
+NET "CLK" LOC = "C9" | IOSTANDARD = LVTTL;
 #
 NET "led0" LOC = "F12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 4;
 NET "led1" LOC = "E12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 4;
@@ -43,9 +48,9 @@ NET "switch<3>" LOC = "N17" | IOSTANDARD = LVTTL | PULLUP;
 # Press buttons 
 #   Must have pull DOWN resistors to provide Low when not pressed.
 #
-NET "shiftInBits" LOC = "V4"  | IOSTANDARD = LVTTL | PULLDOWN; #btn_north
+NET "shift" LOC = "V4"  | IOSTANDARD = LVTTL | PULLDOWN;
 #NET "btn_east"  LOC = "H13" | IOSTANDARD = LVTTL | PULLDOWN;
-NET "calculate" LOC = "K17" | IOSTANDARD = LVTTL | PULLDOWN;	#btn_south
+NET "calculate" LOC = "K17" | IOSTANDARD = LVTTL | PULLDOWN;
 #NET "btn_west"  LOC = "D18" | IOSTANDARD = LVTTL | PULLDOWN;
 #
 # Rotary encoder. 

@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/Chimpo/ipcore_dir/dist_mem.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/petersjl/Documents/School/CSSE/232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/XilinxProject/Chimpo/ipcore_dir/dist_mem.v&quot; into library work</arg>
 </msg>
 
 </messages>
