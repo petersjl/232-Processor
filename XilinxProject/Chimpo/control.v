@@ -112,6 +112,7 @@ parameter   Interrupt = 14;
 always @ (current_state)
 	begin
 		RegWrite=0;
+		MemWrite=0;
 		MemRead=0;
 		IRWrite=0;
 		PCWrite=0;
@@ -132,6 +133,7 @@ always @ (current_state)
 					ALUSrcA=0;
 					ALUSrcB=4;
 					ALUOp=0;
+					MemRead=1;
 				end
 			Decode:
 				begin

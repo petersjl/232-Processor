@@ -133,6 +133,7 @@ always @ (current_state)
 					ALUSrcA=0;
 					ALUSrcB=4;
 					ALUOp=0;
+					MemRead=1;
 				end
 			Decode:
 				begin
