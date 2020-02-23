@@ -47,7 +47,7 @@ module MemControl(
 					in_sig = 0;
 					out_sig = 0;
 				end
-			else if (address <= 16'b0111111111)
+			else if (address <= 16'b1111111111)
 				begin
 					re_out = re_in;
 					we_out = we_in;

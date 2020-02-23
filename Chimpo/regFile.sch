@@ -53,6 +53,7 @@
         <signal name="DestReg(3:0)" />
         <signal name="MoveReg(3:0)" />
         <signal name="WriteData(15:0)" />
+        <signal name="O0" />
         <port polarity="Input" name="ClearA" />
         <port polarity="Input" name="ClearB" />
         <port polarity="Input" name="MoveA" />
@@ -179,11 +180,6 @@
             <rect width="64" x="320" y="-172" height="24" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
         </blockdef>
-        <blockdef name="constant">
-            <timestamp>2006-1-1T10:10:10</timestamp>
-            <rect width="112" x="0" y="0" height="64" />
-            <line x2="112" y1="32" y2="32" x1="144" />
-        </blockdef>
         <block symbolname="fd16re" name="XLXI_13">
             <blockpin signalname="CLK" name="C" />
             <blockpin signalname="XLXN_66" name="CE" />
@@ -298,7 +294,7 @@
         <block symbolname="decode4b16" name="XLXI_55">
             <blockpin signalname="DestReg(3:0)" name="A(3:0)" />
             <blockpin signalname="Write" name="Enable" />
-            <blockpin name="O0" />
+            <blockpin signalname="O0" name="O0" />
             <blockpin signalname="O1" name="O1" />
             <blockpin signalname="O2" name="O2" />
             <blockpin signalname="O3" name="O3" />
@@ -357,13 +353,12 @@
             <blockpin signalname="MoveB" name="S" />
             <blockpin signalname="XLXN_60(15:0)" name="OutputExit(15:0)" />
         </block>
-        <block symbolname="constant" name="XLXI_65">
-            <attr value="0000" name="CValue">
-                <trait delete="all:1 sym:0" />
-                <trait editname="all:1 sch:0" />
-                <trait valuetype="BitVector 32 Hexadecimal" />
-            </attr>
-            <blockpin signalname="RegData0(15:0)" name="O" />
+        <block symbolname="fd16re" name="XLXI_66">
+            <blockpin signalname="CLK" name="C" />
+            <blockpin signalname="O0" name="CE" />
+            <blockpin signalname="WriteData(15:0)" name="D(15:0)" />
+            <blockpin signalname="low" name="R" />
+            <blockpin signalname="RegData0(15:0)" name="Q(15:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -821,10 +816,6 @@
             <wire x2="1152" y1="880" y2="880" x1="1056" />
             <wire x2="1152" y1="880" y2="1040" x1="1152" />
         </branch>
-        <branch name="RegData0(15:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1856" y="176" type="branch" />
-            <wire x2="1856" y1="176" y2="176" x1="1728" />
-        </branch>
         <branch name="XLXN_66">
             <wire x2="2912" y1="2224" y2="2224" x1="2848" />
         </branch>
@@ -941,7 +932,30 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="592" y="1680" type="branch" />
             <wire x2="672" y1="1680" y2="1680" x1="592" />
         </branch>
-        <instance x="1696" y="320" name="XLXI_65" orien="R270">
-        </instance>
+        <instance x="1312" y="384" name="XLXI_66" orien="R0" />
+        <branch name="RegData0(15:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1744" y="128" type="branch" />
+            <wire x2="1744" y1="128" y2="128" x1="1696" />
+        </branch>
+        <branch name="WriteData(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1280" y="128" type="branch" />
+            <wire x2="1312" y1="128" y2="128" x1="1280" />
+        </branch>
+        <branch name="O0">
+            <attrtext style="alignment:SOFT-VRIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1040" y="560" type="branch" />
+            <wire x2="1040" y1="464" y2="560" x1="1040" />
+        </branch>
+        <branch name="O0">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1280" y="192" type="branch" />
+            <wire x2="1312" y1="192" y2="192" x1="1280" />
+        </branch>
+        <branch name="CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="256" type="branch" />
+            <wire x2="1312" y1="256" y2="256" x1="1296" />
+        </branch>
+        <branch name="low">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="352" type="branch" />
+            <wire x2="1312" y1="352" y2="352" x1="1296" />
+        </branch>
     </sheet>
 </drawing>

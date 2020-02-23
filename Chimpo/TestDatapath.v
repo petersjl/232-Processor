@@ -9,46 +9,11 @@ module Datapath_Datapath_sch_tb();
 	reg reset;
 
 // Output
-	wire [15:0] Instruction;
-	wire [15:0] mem_out;
-	wire [3:0] Op;
-	wire [15:0] regoutA;
-	wire [15:0] regoutB;
-	wire [15:0] aluout;
-	wire [15:0] aluinA;
-	wire [15:0] aluinB;
-	wire [2:0] aluOpOut;
-	wire [2:0] ALUSrcB;
-	wire [1:0] MemAddr;
-	wire PCWrite;
-	wire [15:0] pcout;
-	wire [15:0] memoryaddress;
-	wire [3:0] current_state;
-	wire [15:0] mdr;
-	wire mem_err;
 // Bidirs
 
 // Instantiate the UUT
    Datapath UUT (
-		.CLK(CLK),
-		.reset(reset),
-		.Instruction(Instruction),
-		.mem_out(mem_out),
-		.Op(Op),
-		.regoutA(regoutA),
-		.regoutB(regoutB),
-		.aluout(aluout),
-		.aluinA(aluinA),
-		.aluinB(aluinB),
-		.aluOpOut(aluOpOut),
-		.ALUSrcB(ALUSrcB),
-		.MemAddr(MemAddr),
-		.PCWrite(PCWrite),
-		.pcout(pcout),
-		.memoryaddress(memoryaddress),
-		.current_state(current_state),
-		.mdr(mdr),
-		.mem_err(mem_err)
+		.CLK(CLK)
    );
 parameter   PERIOD = 20;
    parameter   real DUTY_CYCLE = 0.5;
