@@ -21,11 +21,11 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/Datapath.vf";
+static const char *ng0 = "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/Chimpo/work/Datapath.vf";
 
 
 
-static void Cont_2442_0(char *t0)
+static void Cont_1913_0(char *t0)
 {
     char t3[8];
     char *t1;
@@ -60,7 +60,7 @@ LAB0:    t1 = (t0 + 10048U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(2442, ng0);
+LAB2:    xsi_set_current_line(1913, ng0);
     t2 = (t0 + 8728U);
     t4 = *((char **)t2);
     memset(t3, 0, 8);
@@ -101,7 +101,7 @@ LAB2:    xsi_set_current_line(2442, ng0);
 LAB1:    return;
 }
 
-static void Cont_2443_1(char *t0)
+static void Cont_1914_1(char *t0)
 {
     char t3[8];
     char *t1;
@@ -136,7 +136,7 @@ LAB0:    t1 = (t0 + 10296U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(2443, ng0);
+LAB2:    xsi_set_current_line(1914, ng0);
     t2 = (t0 + 8888U);
     t4 = *((char **)t2);
     memset(t3, 0, 8);
@@ -180,7 +180,7 @@ LAB1:    return;
 
 extern void work_m_00000000001030136626_0237227093_init()
 {
-	static char *pe[] = {(void *)Cont_2442_0,(void *)Cont_2443_1};
+	static char *pe[] = {(void *)Cont_1913_0,(void *)Cont_1914_1};
 	xsi_register_didat("work_m_00000000001030136626_0237227093", "isim/Datapath_Datapath_sch_tb_isim_beh.exe.sim/work/m_00000000001030136626_0237227093.didat");
 	xsi_register_executes(pe);
 }

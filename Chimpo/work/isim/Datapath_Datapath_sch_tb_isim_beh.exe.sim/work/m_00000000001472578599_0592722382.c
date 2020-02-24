@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/control.v";
+static const char *ng0 = "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/Chimpo/control.v";
 static int ng1[] = {0, 0};
 static int ng2[] = {1, 0};
 static int ng3[] = {4, 0};
@@ -521,7 +521,7 @@ LAB53:    xsi_set_current_line(213, ng0);
     t3 = (t0 + 6368);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
     xsi_set_current_line(215, ng0);
-    t2 = ((char*)((ng4)));
+    t2 = ((char*)((ng5)));
     t3 = (t0 + 6848);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 2);
     xsi_set_current_line(216, ng0);

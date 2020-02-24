@@ -57,6 +57,10 @@
         <signal name="XLXN_204" />
         <signal name="int" />
         <signal name="dataOut(9)" />
+        <signal name="XLXN_205" />
+        <signal name="XLXN_206" />
+        <signal name="XLXN_207" />
+        <signal name="XLXN_208" />
         <port polarity="Input" name="Write" />
         <port polarity="Input" name="CLK" />
         <port polarity="Output" name="dataOut(15:0)" />
@@ -141,26 +145,32 @@
             <arc ex="144" ey="-176" sx="144" sy="-80" r="48" cx="144" cy="-128" />
             <line x2="64" y1="-64" y2="-192" x1="64" />
         </blockdef>
+        <blockdef name="vcc">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-64" x1="64" />
+            <line x2="64" y1="0" y2="-32" x1="64" />
+            <line x2="32" y1="-64" y2="-64" x1="96" />
+        </blockdef>
         <block symbolname="gnd" name="XLXI_38">
             <blockpin signalname="G" name="G" />
         </block>
         <block symbolname="and2" name="XLXI_40">
-            <blockpin signalname="dataOut(4)" name="I0" />
+            <blockpin signalname="XLXN_208" name="I0" />
             <blockpin signalname="dataOut(0)" name="I1" />
             <blockpin signalname="XLXN_170" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_41">
-            <blockpin signalname="dataOut(5)" name="I0" />
+            <blockpin signalname="XLXN_207" name="I0" />
             <blockpin signalname="dataOut(1)" name="I1" />
             <blockpin signalname="XLXN_181" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_42">
-            <blockpin signalname="dataOut(6)" name="I0" />
+            <blockpin signalname="XLXN_206" name="I0" />
             <blockpin signalname="dataOut(2)" name="I1" />
             <blockpin signalname="XLXN_182" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_43">
-            <blockpin signalname="dataOut(7)" name="I0" />
+            <blockpin signalname="XLXN_205" name="I0" />
             <blockpin signalname="dataOut(3)" name="I1" />
             <blockpin signalname="XLXN_179" name="O" />
         </block>
@@ -309,6 +319,18 @@
             <blockpin signalname="dataOut(8)" name="I1" />
             <blockpin signalname="dataOut(9)" name="I2" />
             <blockpin signalname="int" name="O" />
+        </block>
+        <block symbolname="vcc" name="XLXI_64">
+            <blockpin signalname="XLXN_205" name="P" />
+        </block>
+        <block symbolname="vcc" name="XLXI_65">
+            <blockpin signalname="XLXN_206" name="P" />
+        </block>
+        <block symbolname="vcc" name="XLXI_66">
+            <blockpin signalname="XLXN_207" name="P" />
+        </block>
+        <block symbolname="vcc" name="XLXI_67">
+            <blockpin signalname="XLXN_208" name="P" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="5440" height="3520">
@@ -633,10 +655,6 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="3200" y="560" type="branch" />
             <wire x2="3280" y1="560" y2="560" x1="3200" />
         </branch>
-        <branch name="dataOut(4)">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="3200" y="624" type="branch" />
-            <wire x2="3280" y1="624" y2="624" x1="3200" />
-        </branch>
         <branch name="XLXN_170">
             <wire x2="3600" y1="592" y2="592" x1="3536" />
             <wire x2="3760" y1="592" y2="592" x1="3600" />
@@ -647,27 +665,15 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="3200" y="720" type="branch" />
             <wire x2="3280" y1="720" y2="720" x1="3200" />
         </branch>
-        <branch name="dataOut(5)">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="3200" y="784" type="branch" />
-            <wire x2="3280" y1="784" y2="784" x1="3200" />
-        </branch>
         <instance x="3280" y="1008" name="XLXI_42" orien="R0" />
         <branch name="dataOut(2)">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="3200" y="880" type="branch" />
             <wire x2="3280" y1="880" y2="880" x1="3200" />
         </branch>
-        <branch name="dataOut(6)">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="3200" y="944" type="branch" />
-            <wire x2="3280" y1="944" y2="944" x1="3200" />
-        </branch>
         <instance x="3280" y="1168" name="XLXI_43" orien="R0" />
         <branch name="dataOut(3)">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="3200" y="1040" type="branch" />
             <wire x2="3280" y1="1040" y2="1040" x1="3200" />
-        </branch>
-        <branch name="dataOut(7)">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="3200" y="1104" type="branch" />
-            <wire x2="3280" y1="1104" y2="1104" x1="3200" />
         </branch>
         <branch name="XLXN_179">
             <wire x2="3600" y1="1072" y2="1072" x1="3536" />
@@ -813,5 +819,21 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4080" y="704" type="branch" />
             <wire x2="4160" y1="704" y2="704" x1="4080" />
         </branch>
+        <branch name="XLXN_205">
+            <wire x2="3280" y1="1104" y2="1104" x1="3248" />
+        </branch>
+        <instance x="3248" y="1168" name="XLXI_64" orien="R270" />
+        <branch name="XLXN_206">
+            <wire x2="3280" y1="944" y2="944" x1="3248" />
+        </branch>
+        <instance x="3248" y="1008" name="XLXI_65" orien="R270" />
+        <branch name="XLXN_207">
+            <wire x2="3280" y1="784" y2="784" x1="3248" />
+        </branch>
+        <instance x="3248" y="848" name="XLXI_66" orien="R270" />
+        <branch name="XLXN_208">
+            <wire x2="3280" y1="624" y2="624" x1="3248" />
+        </branch>
+        <instance x="3248" y="688" name="XLXI_67" orien="R270" />
     </sheet>
 </drawing>

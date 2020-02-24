@@ -1,0 +1,28 @@
+Command line:
+   Datapath_Datapath_sch_tbIO_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51818
+
+Mon Feb 24 17:08:56 2020
+
+
+ Elaboration Time: 0.359375 sec
+
+ Current Memory Usage: 6191.85 Meg
+
+ Total Signals          : 15544
+ Total Nets             : 4069
+ Total Signal Drivers   : 3948
+ Total Blocks           : 3324
+ Total Primitive Blocks : 2637
+ Total Processes        : 5298
+ Total Traceable Variables  : 1022
+ Total Scalar Nets and Variables : 39995
+
+ Total Simulation Time: 0.5 sec
+
+ Current Memory Usage: 5405.38 Meg
+
+Mon Feb 24 17:28:47 2020
+

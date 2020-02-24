@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/Chimpo/work/Datapath_Datapath_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Datapath_Datapath_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="72" />
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/Opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Opcode[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Opcode[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/Reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/Branch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Branch</obj_property>
+      <obj_property name="ObjectShortName">Branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/IR0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IR0</obj_property>
+      <obj_property name="ObjectShortName">IR0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/IR1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IR1</obj_property>
+      <obj_property name="ObjectShortName">IR1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/IR2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IR2</obj_property>
+      <obj_property name="ObjectShortName">IR2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/IR3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IR3</obj_property>
+      <obj_property name="ObjectShortName">IR3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/Int" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Int</obj_property>
+      <obj_property name="ObjectShortName">Int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/PCWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PCWrite</obj_property>
+      <obj_property name="ObjectShortName">PCWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/ALUSrcB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUSrcB[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUSrcB[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/ALUSrcA" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUSrcA</obj_property>
+      <obj_property name="ObjectShortName">ALUSrcA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/CLRA" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLRA</obj_property>
+      <obj_property name="ObjectShortName">CLRA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/CLRB" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLRB</obj_property>
+      <obj_property name="ObjectShortName">CLRB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/MVA" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MVA</obj_property>
+      <obj_property name="ObjectShortName">MVA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/MVB" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MVB</obj_property>
+      <obj_property name="ObjectShortName">MVB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/WriteDataSrc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WriteDataSrc</obj_property>
+      <obj_property name="ObjectShortName">WriteDataSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/IRWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IRWrite</obj_property>
+      <obj_property name="ObjectShortName">IRWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/MemAddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">MemAddr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">MemAddr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/MemWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/MemRead" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MemRead</obj_property>
+      <obj_property name="ObjectShortName">MemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/RegWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/PcIn" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PcIn[1:0]</obj_property>
+      <obj_property name="ObjectShortName">PcIn[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/current_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">current_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/next_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/ALUOp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUOp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/MemData" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MemData</obj_property>
+      <obj_property name="ObjectShortName">MemData</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/Fetch" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Fetch[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Fetch[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/Decode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Decode[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Decode[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/DR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/I" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/SW" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/BEQ" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">BEQ[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BEQ[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/J" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">J[31:0]</obj_property>
+      <obj_property name="ObjectShortName">J[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/JR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">JR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">JR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/DR_Write" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DR_Write[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DR_Write[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/SW_Write" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SW_Write[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SW_Write[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/LW_Read" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">LW_Read[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LW_Read[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/LW_Write" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">LW_Write[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LW_Write[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/JAL" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">JAL[31:0]</obj_property>
+      <obj_property name="ObjectShortName">JAL[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/RESET_STATE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RESET_STATE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RESET_STATE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/control/Interrupt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Interrupt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Interrupt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/dataIn" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataIn[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/intLvl0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">intLvl0</obj_property>
+      <obj_property name="ObjectShortName">intLvl0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/intLvl1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">intLvl1</obj_property>
+      <obj_property name="ObjectShortName">intLvl1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/int0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">int0</obj_property>
+      <obj_property name="ObjectShortName">int0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/int1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">int1</obj_property>
+      <obj_property name="ObjectShortName">int1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/int2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">int2</obj_property>
+      <obj_property name="ObjectShortName">int2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/int3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">int3</obj_property>
+      <obj_property name="ObjectShortName">int3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/RESET" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/Write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Write</obj_property>
+      <obj_property name="ObjectShortName">Write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/dataOut" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOut[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/int" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">int</obj_property>
+      <obj_property name="ObjectShortName">int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/G" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">G</obj_property>
+      <obj_property name="ObjectShortName">G</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/XLXN_170" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XLXN_170</obj_property>
+      <obj_property name="ObjectShortName">XLXN_170</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/XLXN_179" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XLXN_179</obj_property>
+      <obj_property name="ObjectShortName">XLXN_179</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/XLXN_181" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XLXN_181</obj_property>
+      <obj_property name="ObjectShortName">XLXN_181</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/XLXN_182" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XLXN_182</obj_property>
+      <obj_property name="ObjectShortName">XLXN_182</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/XLXN_184" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XLXN_184</obj_property>
+      <obj_property name="ObjectShortName">XLXN_184</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/XLXN_204" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XLXN_204</obj_property>
+      <obj_property name="ObjectShortName">XLXN_204</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/XLXN_205" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XLXN_205</obj_property>
+      <obj_property name="ObjectShortName">XLXN_205</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/XLXN_206" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XLXN_206</obj_property>
+      <obj_property name="ObjectShortName">XLXN_206</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/XLXN_207" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XLXN_207</obj_property>
+      <obj_property name="ObjectShortName">XLXN_207</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/XLXN_208" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XLXN_208</obj_property>
+      <obj_property name="ObjectShortName">XLXN_208</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/XLXI_57/dataOut_DUMMY" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataOut_DUMMY[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOut_DUMMY[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/PC/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/PC/I" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I[15:0]</obj_property>
+      <obj_property name="ObjectShortName">I[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/PC/Write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Write</obj_property>
+      <obj_property name="ObjectShortName">Write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/PC/O" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">O[15:0]</obj_property>
+      <obj_property name="ObjectShortName">O[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tb/UUT/PC/XLXN_1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XLXN_1</obj_property>
+      <obj_property name="ObjectShortName">XLXN_1</obj_property>
+   </wvobject>
+</wave_config>

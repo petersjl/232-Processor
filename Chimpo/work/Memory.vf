@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Memory.vf
-// /___/   /\     Timestamp : 02/23/2020 19:50:07
+// /___/   /\     Timestamp : 02/24/2020 17:02:14
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -sympath C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/ipcore_dir -sympath C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work -intstyle ise -family spartan3e -verilog C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/Memory.vf -w C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/Memory.sch
+//Command: sch2hdl -sympath "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/Chimpo/ipcore_dir" -sympath "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/Chimpo/work" -intstyle ise -family spartan3e -verilog "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/Chimpo/work/Memory.vf" -w "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/Chimpo/Memory.sch"
 //Design Name: Memory
 //Device: spartan3e
 //Purpose:

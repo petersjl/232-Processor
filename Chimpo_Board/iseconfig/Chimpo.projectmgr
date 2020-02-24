@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Chimpo" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Datapath C:|Users|petersjl|Documents|School|CSSE|232|1920b-csse232-lakempca-petersjl-stapler-yeltonwh|Chimpo|Datapath.sch/ALU - alu16b</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|petersjl|Documents|School|CSSE|232|1920b-csse232-lakempca-petersjl-stapler-yeltonwh|Chimpo|Datapath.sch/InstReg - InstructionRegister</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|petersjl|Documents|School|CSSE|232|1920b-csse232-lakempca-petersjl-stapler-yeltonwh|Chimpo|Datapath.sch/RegisterFile - regFile</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|petersjl|Documents|School|CSSE|232|1920b-csse232-lakempca-petersjl-stapler-yeltonwh|Chimpo|Datapath.sch/XLXI_55 - Memory</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|petersjl|Documents|School|CSSE|232|1920b-csse232-lakempca-petersjl-stapler-yeltonwh|Chimpo|Datapath.sch/XLXI_71 - mux4x16</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|petersjl|Documents|School|CSSE|232|1920b-csse232-lakempca-petersjl-stapler-yeltonwh|Chimpo|Datapath.sch/XLXI_74 - mux4x16</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|petersjl|Documents|School|CSSE|232|1920b-csse232-lakempca-petersjl-stapler-yeltonwh|Chimpo|Datapath.sch/XLXI_79 - debouncer</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|petersjl|Documents|School|CSSE|232|1920b-csse232-lakempca-petersjl-stapler-yeltonwh|Chimpo|Datapath.sch/XLXI_80 - debouncer</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|petersjl|Documents|School|CSSE|232|1920b-csse232-lakempca-petersjl-stapler-yeltonwh|Chimpo|Datapath.sch/XLXI_82 - lcd_driver</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|Datapath.sch/ALU - alu16b</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|Datapath.sch/InstReg - InstructionRegister</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|Datapath.sch/MemoryUnit - Memory</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|Datapath.sch/RegisterFile - regFile/XLXI_60 - Mux16x16</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|Datapath.sch/XLXI_10 - alu16b</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|Datapath.sch/XLXI_3 - Memory</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|Datapath.sch/XLXI_45 - alu16b</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|Datapath.sch/XLXI_7 - InstructionRegister</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|Datapath.sch/XLXI_8 - regFile</ClosedNode>
+         <ClosedNode>/Memory C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|Memory.sch</ClosedNode>
+         <ClosedNode>/alu16b C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|alu16b.sch</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Datapath (C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/Datapath.sch)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000185000000020000000000000000000000000200000064ffffffff000000810000000300000002000001850000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Datapath (C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/Datapath.sch)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000173000000010000000100000000000000000000000064ffffffff000000810000000000000001000001730000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000011f000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d00000001000000000000002100000001000000000000005d0000000100000000000000640000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Datapath.sch</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000f8000000010001000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Manage Configuration Project (iMPACT)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >11</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e70000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Manage Configuration Project (iMPACT)</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Datapath C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|Datapath.sch/XLXI_45 - alu16b</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|Datapath.sch/XLXI_7 - InstructionRegister</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|Datapath.sch/XLXI_8 - regFile</ClosedNode>
+         <ClosedNode>/Datapath_Datapath_sch_tb C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|TestDatapath.v/UUT - Datapath/ALU - alu16b</ClosedNode>
+         <ClosedNode>/Datapath_Datapath_sch_tb C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|TestDatapath.v/UUT - Datapath/InstReg - InstructionRegister</ClosedNode>
+         <ClosedNode>/Datapath_Datapath_sch_tb C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|TestDatapath.v/UUT - Datapath/RegisterFile - regFile/XLXI_60 - Mux16x16</ClosedNode>
+         <ClosedNode>/Datapath_Datapath_sch_tb C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|TestDatapath.v/UUT - Datapath/XLXI_55 - Memory</ClosedNode>
+         <ClosedNode>/Memory_Memory_sch_tb C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|TestMemory.v</ClosedNode>
+         <ClosedNode>/TestAluControl C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|TestAluControl.v</ClosedNode>
+         <ClosedNode>/TestMemControl C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|TestMemControl.v</ClosedNode>
+         <ClosedNode>/alu16b C:|Users|yeltonwh|ClassWork|CSSE232|xilinx projects|Chimpo|alu16b.sch</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Datapath_Datapath_sch_tb (C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/TestDatapath.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000199000000020000000000000000000000000200000064ffffffff000000810000000300000002000001990000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Datapath_Datapath_sch_tb (C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/TestDatapath.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>ISim Simulator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>CORE Generator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+</Project>

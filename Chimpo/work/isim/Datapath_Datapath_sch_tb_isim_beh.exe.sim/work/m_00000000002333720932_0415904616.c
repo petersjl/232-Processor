@@ -21,11 +21,11 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/Datapath.vf";
+static const char *ng0 = "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/Chimpo/work/Datapath.vf";
 
 
 
-static void Cont_1452_0(char *t0)
+static void Cont_923_0(char *t0)
 {
     char *t1;
     char *t2;
@@ -51,7 +51,7 @@ LAB0:    t1 = (t0 + 4448U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(1452, ng0);
+LAB2:    xsi_set_current_line(923, ng0);
     t2 = (t0 + 3288U);
     t3 = *((char **)t2);
     t2 = (t0 + 4848);
@@ -82,7 +82,7 @@ LAB1:    return;
 
 extern void work_m_00000000002333720932_0415904616_init()
 {
-	static char *pe[] = {(void *)Cont_1452_0};
+	static char *pe[] = {(void *)Cont_923_0};
 	xsi_register_didat("work_m_00000000002333720932_0415904616", "isim/Datapath_Datapath_sch_tb_isim_beh.exe.sim/work/m_00000000002333720932_0415904616.didat");
 	xsi_register_executes(pe);
 }

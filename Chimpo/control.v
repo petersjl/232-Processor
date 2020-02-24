@@ -212,7 +212,7 @@ always @ (current_state)
 				begin
 					PCWrite=1;
 					MemWrite=1;
-					PcIn=3;
+					PcIn=2;
 					MemAddr=3;
 					MemData=1;
 				end
@@ -225,7 +225,7 @@ always @ (current_state)
 		endcase
 	end
 //NEXT_STATE	calculation
-always @ (current_state, next_state, Opcode)
+always @ (Int, current_state, next_state, Opcode)
 	begin
 
 		case(current_state)

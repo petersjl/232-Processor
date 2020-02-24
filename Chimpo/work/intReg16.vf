@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : intReg16.vf
-// /___/   /\     Timestamp : 02/23/2020 18:01:15
+// /___/   /\     Timestamp : 02/24/2020 15:33:42
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -sympath C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/ipcore_dir -intstyle ise -family spartan3e -verilog C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/intReg16.vf -w C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/intReg16.sch
+//Command: sch2hdl -sympath "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/Chimpo/ipcore_dir" -sympath "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/Chimpo/work" -intstyle ise -family spartan3e -verilog "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/Chimpo/work/intReg16.vf" -w "C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/Chimpo/intReg16.sch"
 //Design Name: intReg16
 //Device: spartan3e
 //Purpose:
@@ -53,20 +53,24 @@ module intReg16(CLK,
    wire XLXN_182;
    wire XLXN_184;
    wire XLXN_204;
+   wire XLXN_205;
+   wire XLXN_206;
+   wire XLXN_207;
+   wire XLXN_208;
    wire [15:0] dataOut_DUMMY;
    
    assign dataOut[15:0] = dataOut_DUMMY[15:0];
    GND  XLXI_38 (.G(G));
-   AND2  XLXI_40 (.I0(dataOut_DUMMY[4]), 
+   AND2  XLXI_40 (.I0(XLXN_208), 
                  .I1(dataOut_DUMMY[0]), 
                  .O(XLXN_170));
-   AND2  XLXI_41 (.I0(dataOut_DUMMY[5]), 
+   AND2  XLXI_41 (.I0(XLXN_207), 
                  .I1(dataOut_DUMMY[1]), 
                  .O(XLXN_181));
-   AND2  XLXI_42 (.I0(dataOut_DUMMY[6]), 
+   AND2  XLXI_42 (.I0(XLXN_206), 
                  .I1(dataOut_DUMMY[2]), 
                  .O(XLXN_182));
-   AND2  XLXI_43 (.I0(dataOut_DUMMY[7]), 
+   AND2  XLXI_43 (.I0(XLXN_205), 
                  .I1(dataOut_DUMMY[3]), 
                  .O(XLXN_179));
    OR4  XLXI_44 (.I0(XLXN_179), 
@@ -177,4 +181,8 @@ module intReg16(CLK,
                  .I1(dataOut_DUMMY[8]), 
                  .I2(dataOut_DUMMY[9]), 
                  .O(int));
+   VCC  XLXI_64 (.P(XLXN_205));
+   VCC  XLXI_65 (.P(XLXN_206));
+   VCC  XLXI_66 (.P(XLXN_207));
+   VCC  XLXI_67 (.P(XLXN_208));
 endmodule

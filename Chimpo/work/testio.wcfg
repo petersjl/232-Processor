@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/yeltonwh/ClassWork/CSSE232/xilinx projects/Chimpo/work/Datapath_Datapath_sch_tbIO_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Datapath_Datapath_sch_tbIO" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/Datapath_Datapath_sch_tbIO/UUT/control/Opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Opcode[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Opcode[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tbIO/UUT/control/current_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">current_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tbIO/UUT/PC/O" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">O[15:0]</obj_property>
+      <obj_property name="ObjectShortName">O[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">PC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tbIO/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[15:0]</obj_property>
+      <obj_property name="ObjectShortName">result[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tbIO/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tbIO/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tbIO/shift" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">shift</obj_property>
+      <obj_property name="ObjectShortName">shift</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tbIO/calculate" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">calculate</obj_property>
+      <obj_property name="ObjectShortName">calculate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tbIO/switch" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">switch[3:0]</obj_property>
+      <obj_property name="ObjectShortName">switch[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tbIO/UUT/RegisterFile/RegOutA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RegOutA[15:0]</obj_property>
+      <obj_property name="ObjectShortName">RegOutA[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_Datapath_sch_tbIO/UUT/RegisterFile/RegOutB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RegOutB[15:0]</obj_property>
+      <obj_property name="ObjectShortName">RegOutB[15:0]</obj_property>
+   </wvobject>
+</wave_config>
