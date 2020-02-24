@@ -1,0 +1,61 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : SL1.vf
+// /___/   /\     Timestamp : 02/23/2020 18:01:14
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/ipcore_dir -intstyle ise -family spartan3e -verilog C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/SL1.vf -w C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/SL1.sch
+//Design Name: SL1
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module SL1(INPUT, 
+           OUTPUT);
+
+    input [15:0] INPUT;
+   output [15:0] OUTPUT;
+   
+   
+   BUF  XLXI_40 (.I(INPUT[0]), 
+                .O(OUTPUT[1]));
+   BUF  XLXI_41 (.I(INPUT[1]), 
+                .O(OUTPUT[2]));
+   BUF  XLXI_42 (.I(INPUT[2]), 
+                .O(OUTPUT[3]));
+   BUF  XLXI_43 (.I(INPUT[3]), 
+                .O(OUTPUT[4]));
+   BUF  XLXI_44 (.I(INPUT[4]), 
+                .O(OUTPUT[5]));
+   BUF  XLXI_45 (.I(INPUT[5]), 
+                .O(OUTPUT[6]));
+   BUF  XLXI_46 (.I(INPUT[6]), 
+                .O(OUTPUT[7]));
+   BUF  XLXI_47 (.I(INPUT[7]), 
+                .O(OUTPUT[8]));
+   BUF  XLXI_48 (.I(INPUT[8]), 
+                .O(OUTPUT[9]));
+   BUF  XLXI_49 (.I(INPUT[9]), 
+                .O(OUTPUT[10]));
+   BUF  XLXI_50 (.I(INPUT[14]), 
+                .O(OUTPUT[15]));
+   BUF  XLXI_51 (.I(INPUT[13]), 
+                .O(OUTPUT[14]));
+   BUF  XLXI_52 (.I(INPUT[12]), 
+                .O(OUTPUT[13]));
+   BUF  XLXI_53 (.I(INPUT[11]), 
+                .O(OUTPUT[12]));
+   BUF  XLXI_54 (.I(INPUT[10]), 
+                .O(OUTPUT[11]));
+   GND  XLXI_55 (.G(OUTPUT[0]));
+endmodule

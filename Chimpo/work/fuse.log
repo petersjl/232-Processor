@@ -1,0 +1,134 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/Datapath_Datapath_sch_tb_isim_beh.exe" -prj "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/Datapath_Datapath_sch_tb_beh.prj" "work.Datapath_Datapath_sch_tb" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/../lcdCounter.v" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/../debounce_counter.v" into library work
+WARNING:HDLCompiler:687 - "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/../debounce_counter.v" Line 606: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/mux2x16.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/mux16b8.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/add1b.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/timing.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/../sll16b8i.v" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/reg16.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/mux8b4.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/mux4b4.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/mux4b2.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/Mux16x16.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/../lcd_write_byte.v" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/../lcd_pwr_on_init.v" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/../lcd_control_master.v" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/../lcd_cfg_display.v" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/../ipcore_dir/dist_mem.v" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/../displayRom.v" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/decode4b16.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/alu1b.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/ZE.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/SL1.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/SE.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/regFile.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/mux4x16.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/Memory.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/../MemControl.v" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/lcd_driver.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/intReg16.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/InstructionRegister.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/debouncer.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/../control.v" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/../AluControl.v" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/alu16b.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/Datapath.vf" into library work
+Analyzing Verilog file "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/../TestDatapath.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+WARNING:HDLCompiler:687 - "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/../TestDatapath.v" Line 15: Port calculate is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/Datapath.vf" Line 2999: Port count is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/Datapath.vf" Line 3005: Port count is not connected to this instance
+Completed static elaboration
+Compiling module AND2
+Compiling module OR2
+Compiling module OR3
+Compiling module AND3
+Compiling module OR4
+Compiling module INV
+Compiling module add1b_MUSER_Datapath
+Compiling module VCC
+Compiling module AND2B1
+Compiling module M2_1_MXILINX_Datapath
+Compiling module AND3B1
+Compiling module M2_1E_MXILINX_Datapath
+Compiling module MUXF5_L
+Compiling module MUXF6
+Compiling module M8_1E_MXILINX_Datapath
+Compiling module GND
+Compiling module alu1b_MUSER_Datapath
+Compiling module sll16b8i
+Compiling module XOR2
+Compiling module MUXCY_L
+Compiling module FMAP
+Compiling module NOR4
+Compiling module MUXCY
+Compiling module NOR16_MXILINX_Datapath
+Compiling module mux2x16_MUSER_Datapath
+Compiling module alu16b_MUSER_Datapath
+Compiling module AluControl
+Compiling module FDCE
+Compiling module FD16CE_MXILINX_Datapath
+Compiling module reg16_MUSER_Datapath
+Compiling module mux16b8_MUSER_Datapath
+Compiling module AND4
+Compiling module XNOR2
+Compiling module COMP16_MXILINX_Datapath
+Compiling module CHINPO_control_unit
+Compiling module BUF
+Compiling module InstructionRegister_MUSER_Datapa...
+Compiling module FDRE
+Compiling module FD16RE_MXILINX_Datapath
+Compiling module AND5
+Compiling module decode4b16_MUSER_Datapath
+Compiling module Mux16x16_MUSER_Datapath
+Compiling module regFile_MUSER_Datapath
+Compiling module SL1_MUSER_Datapath
+Compiling module SE_MUSER_Datapath
+Compiling module DIST_MEM_GEN_V6_3(C_FAMILY="spar...
+Compiling module dist_mem
+Compiling module Memory_MUSER_Datapath
+Compiling module MemControl
+Compiling module FDRSE
+Compiling module intReg16_MUSER_Datapath
+Compiling module mux4x16_MUSER_Datapath
+Compiling module FDC
+Compiling module LUT4_L(INIT=16'b1000000000000000...
+Compiling module LUT2_L(INIT=4'b1000)
+Compiling module LUT3(INIT=8'b10000000)
+Compiling module LUT1(INIT=2'b10)
+Compiling module LUT4(INIT=16'b1000000000000000)
+Compiling module LUT2(INIT=4'b1000)
+Compiling module XORCY
+Compiling module debounce_counter
+Compiling module debouncer_MUSER_Datapath
+Compiling module lcd_cfg_display
+Compiling module lcd_pwr_on_init
+Compiling module lcd_write_byte
+Compiling module lcdCounter
+Compiling module timing_MUSER_Datapath
+Compiling module MUXF5
+Compiling module M4_1E_MXILINX_Datapath
+Compiling module mux8b4_MUSER_Datapath
+Compiling module mux4b2_MUSER_Datapath
+Compiling module lcd_control_master
+Compiling module mux4b4_MUSER_Datapath
+Compiling module DIST_MEM_GEN_V6_3(C_FAMILY="spar...
+Compiling module displayRom
+Compiling module lcd_driver_MUSER_Datapath
+Compiling module ZE_MUSER_Datapath
+Compiling module Datapath
+Compiling module Datapath_Datapath_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 81 Verilog Units
+Built simulation executable C:/Users/yeltonwh/ClassWork/CSSE232/1920b-csse232-lakempca-petersjl-stapler-yeltonwh/Chimpo/work/Datapath_Datapath_sch_tb_isim_beh.exe
+Fuse Memory Usage: 33792 KB
+Fuse CPU Usage: 890 ms

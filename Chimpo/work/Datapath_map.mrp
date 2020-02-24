@@ -1,0 +1,663 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'Datapath'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
+-c 100 -o Datapath_map.ncd Datapath.ngd Datapath.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Sun Feb 23 22:14:37 2020
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    3
+Logic Utilization:
+  Total Number Slice Registers:         451 out of   9,312    4%
+    Number used as Flip Flops:          444
+    Number used as Latches:               7
+  Number of 4 input LUTs:             2,112 out of   9,312   22%
+Logic Distribution:
+  Number of occupied Slices:          1,232 out of   4,656   26%
+    Number of Slices containing only related logic:   1,232 out of   1,232 100%
+    Number of Slices containing unrelated logic:          0 out of   1,232   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       2,169 out of   9,312   23%
+    Number used as logic:             1,088
+    Number used as a route-thru:         57
+    Number used for 32x1 RAMs:        1,024
+      (Two LUTs used per 32x1 RAM)
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 28 out of     232   12%
+    IOB Latches:                          3
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Average Fanout of Non-Clock Nets:                5.34
+
+Peak Memory Usage:  4536 MB
+Total REAL time to MAP completion:  6 secs 
+Total CPU time to MAP completion:   4 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - Since no license file was found,
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net RegWrite is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net control/ALUSrcB_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net control/ALUSrcA_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+'2100@ise.csse.rose-hulman.edu'.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:54 - 'xc3s500e' is a WebPack part.
+INFO:LIT:243 - Logical network ALU/XLXI_36/O has no load.
+INFO:LIT:395 - The above info message is repeated 16 more times for the
+   following (max. 5 shown):
+   XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<1
+   5>,
+   XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<1
+   4>,
+   XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<1
+   3>,
+   XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<1
+   2>,
+   XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<1
+   1>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:159 - Net Timing constraints on signal CLK are pushed forward
+   through input buffer.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  45 block(s) removed
+ 267 block(s) optimized away
+  44 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "XLXI_82/XLXI_5/XLXI_16" (BUF) removed.
+The signal "ALU/XLXI_36/CIN" is sourceless and has been removed.
+ Sourceless block "ALU/XLXI_36/I_36_2" (MUX) removed.
+  The signal "ALU/XLXI_36/I_36_2/O" is sourceless and has been removed.
+The signal "ALU/XLXI_36/O" is sourceless and has been removed.
+The signal "ALU/XLXI_36/S0" is sourceless and has been removed.
+The signal "ALU/XLXI_36/S1" is sourceless and has been removed.
+ Sourceless block "ALU/XLXI_36/I_36_129" (MUX) removed.
+  The signal "ALU/XLXI_36/I_36_129/O" is sourceless and has been removed.
+The signal "ALU/XLXI_36/S2" is sourceless and has been removed.
+ Sourceless block "ALU/XLXI_36/I_36_147" (MUX) removed.
+  The signal "ALU/XLXI_36/I_36_147/O" is sourceless and has been removed.
+The signal "ALU/XLXI_36/S3" is sourceless and has been removed.
+ Sourceless block "ALU/XLXI_36/I_36_165" (MUX) removed.
+The signal "ALU/XLXI_36/XLXN_46" is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<15>
+" is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<14>
+" is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<13>
+" is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<12>
+" is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<11>
+" is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<10>
+" is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<9>"
+is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<8>"
+is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<7>"
+is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<6>"
+is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<5>"
+is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<4>"
+is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<3>"
+is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<2>"
+is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<1>"
+is sourceless and has been removed.
+The signal
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int<0>"
+is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "N69" is unused and has been removed.
+ Unused block "control/next_state<1>2_G" (ROM) removed.
+The signal "XLXI_57/XLXN_170" is unused and has been removed.
+ Unused block "XLXI_57/XLXI_40" (AND) removed.
+The signal "XLXI_57/XLXN_179" is unused and has been removed.
+ Unused block "XLXI_57/XLXI_43" (AND) removed.
+The signal "XLXI_57/XLXN_181" is unused and has been removed.
+ Unused block "XLXI_57/XLXI_41" (AND) removed.
+The signal "XLXI_57/XLXN_182" is unused and has been removed.
+ Unused block "XLXI_57/XLXI_42" (AND) removed.
+The signal "XLXI_57/XLXN_184" is unused and has been removed.
+ Unused block "XLXI_57/XLXI_44" (OR) removed.
+The signal "XLXI_79/XLXN_205" is unused and has been removed.
+ Unused block "XLXI_79/XLXI_13" (AND) removed.
+The signal "XLXI_79/XLXN_251" is unused and has been removed.
+ Unused block "XLXI_79/XLXI_65" (AND) removed.
+The signal "XLXI_79/XLXN_265" is unused and has been removed.
+ Unused block "XLXI_79/XLXI_82" (OR) removed.
+  The signal "XLXI_79/button_hi_DUMMY" is unused and has been removed.
+   Unused block "XLXI_79/XLXI_80" (FF) removed.
+The signal "XLXI_79/XLXN_266" is unused and has been removed.
+ Unused block "XLXI_79/XLXI_83" (OR) removed.
+  The signal "XLXI_79/button_lo_DUMMY" is unused and has been removed.
+   Unused block "XLXI_79/XLXI_81" (FF) removed.
+The signal "XLXI_80/XLXN_205" is unused and has been removed.
+ Unused block "XLXI_80/XLXI_13" (AND) removed.
+The signal "XLXI_80/XLXN_251" is unused and has been removed.
+ Unused block "XLXI_80/XLXI_65" (AND) removed.
+The signal "XLXI_80/XLXN_265" is unused and has been removed.
+ Unused block "XLXI_80/XLXI_82" (OR) removed.
+  The signal "XLXI_80/button_hi_DUMMY" is unused and has been removed.
+   Unused block "XLXI_80/XLXI_80" (FF) removed.
+The signal "XLXI_80/XLXN_266" is unused and has been removed.
+ Unused block "XLXI_80/XLXI_83" (OR) removed.
+  The signal "XLXI_80/button_lo_DUMMY" is unused and has been removed.
+   Unused block "XLXI_80/XLXI_81" (FF) removed.
+Unused block "ALU/XLXI_36/I_36_107" (ONE) removed.
+Unused block "ALU/XLXI_36/I_36_109" (ZERO) removed.
+Unused block "ALU/XLXI_36/I_36_110" (OR) removed.
+Unused block "ALU/XLXI_36/I_36_127" (OR) removed.
+Unused block "ALU/XLXI_36/I_36_151" (OR) removed.
+Unused block "ALU/XLXI_36/I_36_161" (OR) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_0"
+(FF) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_1"
+(FF) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_10"
+(FF) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_11"
+(FF) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_12"
+(FF) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_13"
+(FF) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_14"
+(FF) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_15"
+(FF) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_2"
+(FF) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_3"
+(FF) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_4"
+(FF) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_5"
+(FF) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_6"
+(FF) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_7"
+(FF) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_8"
+(FF) removed.
+Unused block
+"XLXI_55/XLXI_21/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/qspo_int_9"
+(FF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+AND3 		ALU/alu1b_0/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_1/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_1/XLXI_17/I_M67/I_36_30
+AND3 		ALU/alu1b_10/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_10/XLXI_17/I_M67/I_36_30
+AND3 		ALU/alu1b_11/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_11/XLXI_17/I_M67/I_36_30
+AND3 		ALU/alu1b_12/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_12/XLXI_17/I_M67/I_36_30
+AND3 		ALU/alu1b_13/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_13/XLXI_17/I_M67/I_36_30
+AND3 		ALU/alu1b_14/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_14/XLXI_17/I_M67/I_36_30
+AND3 		ALU/alu1b_15/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_15/XLXI_17/I_M67/I_36_30
+AND3 		ALU/alu1b_2/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_2/XLXI_17/I_M67/I_36_30
+AND3 		ALU/alu1b_3/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_3/XLXI_17/I_M67/I_36_30
+AND3 		ALU/alu1b_4/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_4/XLXI_17/I_M67/I_36_30
+AND3 		ALU/alu1b_5/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_5/XLXI_17/I_M67/I_36_30
+AND3 		ALU/alu1b_6/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_6/XLXI_17/I_M67/I_36_30
+AND3 		ALU/alu1b_7/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_7/XLXI_17/I_M67/I_36_30
+AND3 		ALU/alu1b_8/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_8/XLXI_17/I_M67/I_36_30
+AND3 		ALU/alu1b_9/XLXI_17/I_M45/I_36_30
+AND3 		ALU/alu1b_9/XLXI_17/I_M67/I_36_30
+GND 		ALUOutReg/XLXI_3
+AND3 		ALUSrcBMux/XLXI_1/I_M23/I_36_30
+AND3 		ALUSrcBMux/XLXI_1/I_M45/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_1/I_M45/I_36_31
+OR2 		ALUSrcBMux/XLXI_1/I_M45/I_36_38
+AND3 		ALUSrcBMux/XLXI_1/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_1/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_1/I_M67/I_36_38
+AND3 		ALUSrcBMux/XLXI_10/I_M45/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_10/I_M45/I_36_31
+OR2 		ALUSrcBMux/XLXI_10/I_M45/I_36_38
+AND3 		ALUSrcBMux/XLXI_10/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_10/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_10/I_M67/I_36_38
+AND3 		ALUSrcBMux/XLXI_11/I_M45/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_11/I_M45/I_36_31
+OR2 		ALUSrcBMux/XLXI_11/I_M45/I_36_38
+AND3 		ALUSrcBMux/XLXI_11/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_11/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_11/I_M67/I_36_38
+AND3 		ALUSrcBMux/XLXI_24/I_M45/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_24/I_M45/I_36_31
+OR2 		ALUSrcBMux/XLXI_24/I_M45/I_36_38
+AND3 		ALUSrcBMux/XLXI_24/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_24/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_24/I_M67/I_36_38
+AND3 		ALUSrcBMux/XLXI_25/I_M45/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_25/I_M45/I_36_31
+OR2 		ALUSrcBMux/XLXI_25/I_M45/I_36_38
+AND3 		ALUSrcBMux/XLXI_25/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_25/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_25/I_M67/I_36_38
+AND3 		ALUSrcBMux/XLXI_26/I_M45/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_26/I_M45/I_36_31
+OR2 		ALUSrcBMux/XLXI_26/I_M45/I_36_38
+AND3 		ALUSrcBMux/XLXI_26/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_26/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_26/I_M67/I_36_38
+AND3 		ALUSrcBMux/XLXI_27/I_M45/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_27/I_M45/I_36_31
+OR2 		ALUSrcBMux/XLXI_27/I_M45/I_36_38
+AND3 		ALUSrcBMux/XLXI_27/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_27/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_27/I_M67/I_36_38
+AND3 		ALUSrcBMux/XLXI_28/I_M01/I_36_30
+AND3 		ALUSrcBMux/XLXI_28/I_M45/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_28/I_M45/I_36_31
+OR2 		ALUSrcBMux/XLXI_28/I_M45/I_36_38
+AND3 		ALUSrcBMux/XLXI_28/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_28/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_28/I_M67/I_36_38
+AND3 		ALUSrcBMux/XLXI_29/I_M01/I_36_30
+AND3 		ALUSrcBMux/XLXI_29/I_M45/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_29/I_M45/I_36_31
+OR2 		ALUSrcBMux/XLXI_29/I_M45/I_36_38
+AND3 		ALUSrcBMux/XLXI_29/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_29/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_29/I_M67/I_36_38
+AND3 		ALUSrcBMux/XLXI_30/I_M01/I_36_30
+AND3 		ALUSrcBMux/XLXI_30/I_M45/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_30/I_M45/I_36_31
+OR2 		ALUSrcBMux/XLXI_30/I_M45/I_36_38
+AND3 		ALUSrcBMux/XLXI_30/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_30/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_30/I_M67/I_36_38
+AND3 		ALUSrcBMux/XLXI_31/I_M01/I_36_30
+AND3 		ALUSrcBMux/XLXI_31/I_M45/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_31/I_M45/I_36_31
+OR2 		ALUSrcBMux/XLXI_31/I_M45/I_36_38
+AND3 		ALUSrcBMux/XLXI_31/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_31/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_31/I_M67/I_36_38
+AND3 		ALUSrcBMux/XLXI_32/I_M01/I_36_30
+AND3 		ALUSrcBMux/XLXI_32/I_M45/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_32/I_M45/I_36_31
+OR2 		ALUSrcBMux/XLXI_32/I_M45/I_36_38
+AND3 		ALUSrcBMux/XLXI_32/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_32/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_32/I_M67/I_36_38
+AND3 		ALUSrcBMux/XLXI_33/I_M01/I_36_30
+AND3 		ALUSrcBMux/XLXI_33/I_M45/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_33/I_M45/I_36_31
+OR2 		ALUSrcBMux/XLXI_33/I_M45/I_36_38
+AND3 		ALUSrcBMux/XLXI_33/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_33/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_33/I_M67/I_36_38
+AND3 		ALUSrcBMux/XLXI_34/I_M01/I_36_30
+AND3 		ALUSrcBMux/XLXI_34/I_M45/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_34/I_M45/I_36_31
+OR2 		ALUSrcBMux/XLXI_34/I_M45/I_36_38
+AND3 		ALUSrcBMux/XLXI_34/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_34/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_34/I_M67/I_36_38
+AND3 		ALUSrcBMux/XLXI_35/I_M01/I_36_30
+AND3 		ALUSrcBMux/XLXI_35/I_M45/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_35/I_M45/I_36_31
+OR2 		ALUSrcBMux/XLXI_35/I_M45/I_36_38
+AND3 		ALUSrcBMux/XLXI_35/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_35/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_35/I_M67/I_36_38
+AND3 		ALUSrcBMux/XLXI_9/I_M45/I_36_30
+AND3 		ALUSrcBMux/XLXI_9/I_M67/I_36_30
+AND3B1 		ALUSrcBMux/XLXI_9/I_M67/I_36_31
+OR2 		ALUSrcBMux/XLXI_9/I_M67/I_36_38
+AND2 		XLXI_55/XLXI_2/XLXI_10/I_36_9
+AND2 		XLXI_55/XLXI_2/XLXI_11/I_36_9
+AND2 		XLXI_55/XLXI_2/XLXI_12/I_36_9
+AND2 		XLXI_55/XLXI_2/XLXI_13/I_36_9
+AND2 		XLXI_55/XLXI_2/XLXI_14/I_36_9
+AND2 		XLXI_55/XLXI_2/XLXI_15/I_36_9
+AND2 		XLXI_55/XLXI_2/XLXI_16/I_36_9
+AND2 		XLXI_55/XLXI_2/XLXI_17/I_36_9
+AND2 		XLXI_55/XLXI_2/XLXI_18/I_36_9
+AND2 		XLXI_55/XLXI_2/XLXI_19/I_36_9
+AND2 		XLXI_55/XLXI_2/XLXI_4/I_36_9
+AND2 		XLXI_55/XLXI_2/XLXI_5/I_36_9
+AND2 		XLXI_55/XLXI_2/XLXI_6/I_36_9
+AND2 		XLXI_55/XLXI_2/XLXI_7/I_36_9
+AND2 		XLXI_55/XLXI_2/XLXI_8/I_36_9
+AND2 		XLXI_55/XLXI_2/XLXI_9/I_36_9
+GND 		XLXI_55/XLXI_21/XST_GND
+FDRSE 		XLXI_57/XLXI_55
+   optimized to 0
+FDRSE 		XLXI_57/XLXI_56
+   optimized to 0
+FDRSE 		XLXI_57/XLXI_57
+   optimized to 0
+FDRSE 		XLXI_57/XLXI_58
+   optimized to 0
+FDRSE 		XLXI_57/XLXI_59
+   optimized to 0
+FDRSE 		XLXI_57/XLXI_60
+   optimized to 0
+FDRSE 		XLXI_57/XLXI_61
+   optimized to 0
+AND3 		XLXI_57/XLXI_63
+AND2 		XLXI_71/XLXI_1/XLXI_11/I_36_9
+AND2 		XLXI_71/XLXI_1/XLXI_12/I_36_9
+AND2 		XLXI_71/XLXI_1/XLXI_13/I_36_9
+AND2 		XLXI_71/XLXI_1/XLXI_14/I_36_9
+AND2 		XLXI_71/XLXI_1/XLXI_15/I_36_9
+AND2 		XLXI_71/XLXI_1/XLXI_16/I_36_9
+AND2 		XLXI_71/XLXI_1/XLXI_17/I_36_9
+AND2 		XLXI_71/XLXI_1/XLXI_18/I_36_9
+AND2 		XLXI_71/XLXI_1/XLXI_19/I_36_9
+AND2 		XLXI_71/XLXI_1/XLXI_4/I_36_9
+AND2 		XLXI_71/XLXI_1/XLXI_5/I_36_9
+AND2 		XLXI_71/XLXI_1/XLXI_7/I_36_9
+AND2 		XLXI_71/XLXI_1/XLXI_8/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_10/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_11/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_12/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_13/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_14/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_15/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_16/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_17/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_18/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_19/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_4/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_5/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_6/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_7/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_8/I_36_9
+AND2 		XLXI_71/XLXI_2/XLXI_9/I_36_9
+AND2 		XLXI_74/XLXI_1/XLXI_10/I_36_9
+AND2 		XLXI_74/XLXI_1/XLXI_11/I_36_9
+AND2 		XLXI_74/XLXI_1/XLXI_12/I_36_9
+AND2 		XLXI_74/XLXI_1/XLXI_13/I_36_9
+AND2 		XLXI_74/XLXI_1/XLXI_15/I_36_9
+AND2 		XLXI_74/XLXI_1/XLXI_16/I_36_9
+AND2 		XLXI_74/XLXI_1/XLXI_17/I_36_9
+AND2 		XLXI_74/XLXI_1/XLXI_18/I_36_9
+AND2 		XLXI_74/XLXI_1/XLXI_19/I_36_9
+AND2 		XLXI_74/XLXI_1/XLXI_4/I_36_9
+AND2 		XLXI_74/XLXI_1/XLXI_5/I_36_9
+AND2 		XLXI_74/XLXI_1/XLXI_6/I_36_9
+AND2 		XLXI_74/XLXI_1/XLXI_8/I_36_9
+AND2 		XLXI_74/XLXI_1/XLXI_9/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_10/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_11/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_12/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_13/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_14/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_15/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_16/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_17/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_18/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_19/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_4/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_5/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_6/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_7/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_8/I_36_9
+AND2 		XLXI_74/XLXI_2/XLXI_9/I_36_9
+GND 		XLXI_79/XLXI_85/blk00000001/blk00000002
+VCC 		XLXI_79/XLXI_85/blk00000001/blk00000003
+GND 		XLXI_80/XLXI_85/blk00000001/blk00000002
+VCC 		XLXI_80/XLXI_85/blk00000001/blk00000003
+AND3B1 		XLXI_82/XLXI_23/XLXI_1/I_M23/I_36_31
+AND3B1 		XLXI_82/XLXI_23/XLXI_2/I_M23/I_36_31
+AND3B1 		XLXI_82/XLXI_23/XLXI_3/I_M01/I_36_31
+AND3B1 		XLXI_82/XLXI_23/XLXI_3/I_M23/I_36_31
+AND3 		XLXI_82/XLXI_23/XLXI_38/I_M01/I_36_30
+AND3B1 		XLXI_82/XLXI_23/XLXI_38/I_M23/I_36_31
+AND3B1 		XLXI_82/XLXI_23/XLXI_39/I_M23/I_36_31
+AND3B1 		XLXI_82/XLXI_23/XLXI_4/I_M01/I_36_31
+AND3B1 		XLXI_82/XLXI_23/XLXI_4/I_M23/I_36_31
+AND3 		XLXI_82/XLXI_23/XLXI_40/I_M01/I_36_30
+AND3B1 		XLXI_82/XLXI_23/XLXI_40/I_M01/I_36_31
+OR2 		XLXI_82/XLXI_23/XLXI_40/I_M01/I_36_38
+AND3B1 		XLXI_82/XLXI_23/XLXI_40/I_M23/I_36_31
+AND3 		XLXI_82/XLXI_23/XLXI_41/I_M01/I_36_30
+AND3B1 		XLXI_82/XLXI_23/XLXI_41/I_M01/I_36_31
+OR2 		XLXI_82/XLXI_23/XLXI_41/I_M01/I_36_38
+AND3 		XLXI_82/XLXI_23/XLXI_41/I_M23/I_36_30
+GND 		XLXI_82/XLXI_5/XLXI_25/blk00000001/blk00000002
+VCC 		XLXI_82/XLXI_5/XLXI_25/blk00000001/blk00000003
+BUF 		XLXI_82/XLXI_61
+BUF 		XLXI_82/XLXI_62
+GND 		XLXI_82/XLXI_64/XST_GND
+AND2 		XLXI_84/XLXI_10/I_36_9
+AND2 		XLXI_84/XLXI_11/I_36_9
+AND2 		XLXI_84/XLXI_12/I_36_9
+AND2 		XLXI_84/XLXI_13/I_36_9
+AND2 		XLXI_84/XLXI_14/I_36_9
+AND2 		XLXI_84/XLXI_15/I_36_9
+AND2 		XLXI_84/XLXI_16/I_36_9
+AND2 		XLXI_84/XLXI_17/I_36_9
+AND2 		XLXI_84/XLXI_18/I_36_9
+AND2 		XLXI_84/XLXI_19/I_36_9
+AND2 		XLXI_84/XLXI_8/I_36_9
+AND2 		XLXI_84/XLXI_9/I_36_9
+AND2 		XLXI_86/XLXI_12/I_36_9
+AND2 		XLXI_86/XLXI_14/I_36_9
+AND2 		XLXI_86/XLXI_15/I_36_9
+AND2 		XLXI_86/XLXI_16/I_36_9
+AND2 		XLXI_86/XLXI_17/I_36_9
+AND2 		XLXI_86/XLXI_18/I_36_9
+AND2 		XLXI_86/XLXI_19/I_36_9
+VCC 		XLXI_87
+BUF 		XLXI_88
+BUF 		XLXI_89
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ALUSrcB<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| ALUSrcB<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| ALUSrcB<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| CLK                                | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| Op<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Op<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Op<2>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Op<3>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PCWrite                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| calculate                          | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
+| display                            | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
+| lcd_D<0>                           | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| lcd_D<1>                           | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| lcd_D<2>                           | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| lcd_D<3>                           | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| lcd_E                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| lcd_rs                             | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| lcd_rw                             | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| led7                               | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| reset                              | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
+| sf_ce                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| sf_oe                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| sf_we                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| shift                              | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
+| switch<0>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| switch<1>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| switch<2>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| switch<3>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

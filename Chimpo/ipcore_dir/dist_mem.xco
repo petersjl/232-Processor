@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Fri Feb 21 07:01:31 2020
+# Date: Mon Feb 24 00:48:59 2020
 #
 ##############################################################
 #
@@ -40,7 +40,7 @@ SELECT Distributed_Memory_Generator xilinx.com:ip:dist_mem_gen:6.3
 # END Select
 # BEGIN Parameters
 CSET ce_overrides=ce_overrides_sync_controls
-CSET coefficient_file="C:\Users\yeltonwh\ClassWork\CSSE232\xilinx projects\Chimpo\memory_small.coe"
+CSET coefficient_file=C:\Users\yeltonwh\ClassWork\CSSE232\1920b-csse232-lakempca-petersjl-stapler-yeltonwh\Chimpo\memory_small.coe
 CSET common_output_ce=false
 CSET common_output_clk=false
 CSET component_name=dist_mem
@@ -70,4 +70,4 @@ CSET sync_reset_qspo=false
 MISC pkg_timestamp=2011-10-15T10:45:00Z
 # END Extra information
 GENERATE
-# CRC: 448808e9
+# CRC: 78f80d45

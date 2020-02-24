@@ -53,7 +53,7 @@
             <circle r="16" cx="144" cy="-32" />
         </blockdef>
         <blockdef name="dist_mem">
-            <timestamp>2020-2-21T7:2:11</timestamp>
+            <timestamp>2020-2-24T0:49:25</timestamp>
             <rect width="224" x="32" y="32" height="512" />
             <line x2="32" y1="80" y2="80" style="linewidth:W" x1="0" />
             <line x2="32" y1="112" y2="112" style="linewidth:W" x1="0" />
@@ -70,16 +70,16 @@
         <block symbolname="gnd" name="ground(15:0)">
             <blockpin signalname="XLXN_21(15:0)" name="G" />
         </block>
-        <block symbolname="dist_mem" name="XLXI_17">
+        <block symbolname="inv" name="XLXI_20">
+            <blockpin signalname="re" name="I" />
+            <blockpin signalname="XLXN_61" name="O" />
+        </block>
+        <block symbolname="dist_mem" name="XLXI_21">
             <blockpin signalname="address(10:1)" name="a(9:0)" />
             <blockpin signalname="data(15:0)" name="d(15:0)" />
             <blockpin signalname="we" name="we" />
             <blockpin signalname="clk" name="clk" />
             <blockpin signalname="XLXN_22(15:0)" name="spo(15:0)" />
-        </block>
-        <block symbolname="inv" name="XLXI_20">
-            <blockpin signalname="re" name="I" />
-            <blockpin signalname="XLXN_61" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -138,8 +138,6 @@
             <wire x2="2080" y1="1072" y2="1088" x1="2080" />
             <wire x2="2080" y1="1088" y2="1136" x1="2080" />
         </branch>
-        <instance x="1600" y="864" name="XLXI_17" orien="R0">
-        </instance>
         <branch name="re">
             <wire x2="480" y1="1120" y2="1120" x1="336" />
         </branch>
@@ -149,5 +147,7 @@
             <attrtext style="alignment:SOFT-VRIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="1456" type="branch" />
             <wire x2="2080" y1="1360" y2="1456" x1="2080" />
         </branch>
+        <instance x="1600" y="864" name="XLXI_21" orien="R0">
+        </instance>
     </sheet>
 </drawing>
